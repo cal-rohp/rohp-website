@@ -148,11 +148,12 @@ ul {
     padding   : 15px 30px
     }
 
-/*btn-primary*/
 .btn-primary {
     /*background-color : #fd367e;*/
+    transition: 0.2s;
     background-color : gold;
     border-color     : gold;
+    color: gray;
     }
 
 .btn-primary:hover,
@@ -160,6 +161,7 @@ ul {
 .btn-primary:active:focus {
     /*background   : transparent;*/
     /*color        : blue;*/
+    transition: 0.2s;
     opacity : 0.5;
     border-color : transparent;
     }
@@ -487,7 +489,7 @@ button:focus,
     font-size        : 16px;
     font-weight: bold;
 
-    margin           : 0 40px;
+    /*margin           : 0 40px;*/
     text-transform   : uppercase;
     padding          : 10px 0;
     }
@@ -833,10 +835,61 @@ button:focus,
     margin: 0px 50px 10px 50px;
 }
 
-#rha {
+.rha {
     width:180px;
 }
 
 .center {
     text-align: center;
+}
+
+.team .thumbnail img {
+    transition: 0.25s;
+    opacity: 0.8;
+    border: 5px solid transparent;
+}
+
+.team .thumbnail img:hover {
+    transition: 0.25s;
+    opacity: 1;
+    cursor: pointer;
+    border: 5px solid gold;
+}
+
+.committee-photo {
+}
+
+.bio {
+    display: none;
+    position: fixed;
+    top: 25%;
+    left: calc((100% - 500px) / 2);
+    width: 500px;
+    padding: 20px;
+    margin: 0 auto;
+    background: white;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.1), 0 6px 6px rgba(0,0,0,0.12);
+    z-index: 20;
+    border: 5px solid #337ab7; /* #0e1555 */
+    text-align: center;
+}
+
+#overlay {
+    display: none;
+    width: 100%;
+    height: 100%;
+    z-index: 10;
+    background: rgba(0, 0, 0, 0.5);
+    position: fixed;
+}
+
+.line {
+    width: 100%;
+    height: 1px;
+    background-color: #888;
+    margin-bottom: 10px;
+}
+
+.major {
+    margin-bottom: 5px;
 }

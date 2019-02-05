@@ -1,7 +1,7 @@
 $(document).ready(function(){
 
 	$('#date1').click(function() {
-		$('#night1').show();
+		$('#night1').fadeIn(300);
 		$('#night2').hide();
 		$('#night3').hide();
 		$('#night4').hide();
@@ -11,7 +11,7 @@ $(document).ready(function(){
 
 	$('#date2').click(function() {
 		$('#night1').hide();
-		$('#night2').show();
+		$('#night2').fadeIn(300);
 		$('#night3').hide();
 		$('#night4').hide();
 		$('#night5').hide();
@@ -21,7 +21,7 @@ $(document).ready(function(){
 	$('#date3').click(function() {
 		$('#night1').hide();
 		$('#night2').hide();
-		$('#night3').show();
+		$('#night3').fadeIn(300);
 		$('#night4').hide();
 		$('#night5').hide();
 		$('#night6').hide();
@@ -31,7 +31,7 @@ $(document).ready(function(){
 		$('#night1').hide();
 		$('#night2').hide();
 		$('#night3').hide();
-		$('#night4').show();
+		$('#night4').fadeIn(300);
 		$('#night5').hide();
 		$('#night6').hide();
 	});
@@ -41,7 +41,7 @@ $(document).ready(function(){
 		$('#night2').hide();
 		$('#night3').hide();
 		$('#night4').hide();
-		$('#night5').show();
+		$('#night5').fadeIn(300);
 		$('#night6').hide();
 	});
 
@@ -51,6 +51,22 @@ $(document).ready(function(){
 		$('#night3').hide();
 		$('#night4').hide();
 		$('#night5').hide();
-		$('#night6').show();
+		$('#night6').fadeIn(300);
+	});
+
+
+	var name = "";
+
+	$('.committee-photo').click(function() {
+		name = this.className.split(" ")[1];
+		// console.log(name)
+		$("." + name + ".bio").fadeIn(300);
+		$("#overlay").fadeIn(300);
+	});
+
+	$('.bio > .btn').click(function() {
+		// console.log("ok clicked")
+		$("." + name + ".bio").fadeOut(300);
+		$("#overlay").fadeOut(300);
 	});
 });
