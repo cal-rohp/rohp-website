@@ -546,11 +546,12 @@ button:focus,
 .section-ajenda .session h3 {
     margin         : 20px 0 20px 20px;
     font-size      : 20px;
-    text-transform : uppercase;
+    /*text-transform : uppercase;*/
     }
 
 .section-ajenda .session h3 span {
-    font-size   : 14px;
+    /*font-size   : 14px;*/
+    font-size: 16px;
     display     : block;
     line-height : 1;
     }
@@ -860,12 +861,18 @@ button:focus,
 .committee-photo {
 }
 
+::-webkit-scrollbar {
+  width: 10px;
+}
+
 .bio {
     display: none;
     position: fixed;
-    top: 25%;
-    left: calc((100% - 500px) / 2);
-    width: 500px;
+    top: calc(40% / 2);
+    bottom: calc(40% / 2);
+    left: calc(50% / 2);
+    height: 60%;
+    width: 50%;
     padding: 20px;
     margin: 0 auto;
     background: white;
@@ -873,6 +880,7 @@ button:focus,
     z-index: 20;
     border: 5px solid #337ab7; /* #0e1555 */
     text-align: center;
+    overflow: auto;
 }
 
 #overlay {
