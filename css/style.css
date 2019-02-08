@@ -563,6 +563,7 @@ button:focus,
     border         : 1px solid #f1f1f1;
     background     : #ffffff;
     padding-bottom : 40px;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.1), 0 6px 6px rgba(0,0,0,0.12);
     }
 
 @media (max-width : 766px) {
