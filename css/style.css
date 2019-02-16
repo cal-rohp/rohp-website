@@ -902,3 +902,8 @@ button:focus,
 .major {
     margin-bottom: 5px;
 }
+
+.date-full {
+    text-align: center;
+    font-size: 15px;
+}
