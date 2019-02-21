@@ -530,7 +530,8 @@ button:focus,
 .section-ajenda .session {
     padding       : 15px 0;
     border-left   : 1px solid #eeeeee;
-    margin-bottom : 40px;
+    /*margin-bottom : 40px;*/
+    /*margin-bottom: 10px;*/
     }
 
 .section-ajenda .session time {
