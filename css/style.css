@@ -632,7 +632,7 @@ button:focus,
     }
 
 /* --------------------------
- * Client Logo 
+ * Client Logo
  *---------------------------*/
 
 .client-logo a img {
@@ -884,7 +884,6 @@ button:focus,
     text-align: center;
     overflow: auto;
 }
-
 #overlay {
     display: none;
     width: 100%;
