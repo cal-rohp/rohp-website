@@ -207,6 +207,7 @@ button:focus,
 #main-wrapper {
     background : #ffffff;
     overflow   : hidden;
+    width: 100%;
     }
 
 /*-----------------------------
@@ -418,7 +419,7 @@ button:focus,
  * Section Wrapper
  *---------------------------*/
 .section-wrapper {
-    padding : 100px 0;
+    padding: 100px 0;
     /*padding: 30px 0;*/
     }
 
