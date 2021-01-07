@@ -25,8 +25,8 @@ Author: uiCookies.com
 	    12.1. #googleMap
 	    12.2. Contact Form
 	13. Footer / .footer
-	14. Preloader / #preloader
-
+    14. Preloader / #preloader
+    15. Youtube Carousel
 
 # [Color codes]
 
@@ -915,7 +915,8 @@ button:focus,
     font-size: 23px;
 }
 /*
- * Bootrap carousel plugin
+ * Bootrap youtube carousel plugin
+ * https://codepen.io/RuneStenstroem/pen/vgBEZo
  * --------------------------------------------------
  */
 

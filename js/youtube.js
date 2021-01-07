@@ -1,3 +1,4 @@
+//Sourced entirely from https://codepen.io/RuneStenstroem/pen/vgBEZo
 //Start Youtube API
 var tag = document.createElement('script');
 tag.src = "https://www.youtube.com/iframe_api";
