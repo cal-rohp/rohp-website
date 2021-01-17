@@ -37,11 +37,11 @@ Author: uiCookies.com
 # -------------------------------------------------------------------*/
 
 body {
-    font-family : 'Roboto', sans-serif;
+    font-family : 'Josefin Sans';
     font-size   : 17px;
     line-height : 1.7em;
-    color       : #353e55;
-    font-weight : 100;
+    color       : #ffffff;
+    font-weight : 200;
     background  : #ffffff;
     /*border      : 10px solid #fff;*/
     }
@@ -51,38 +51,40 @@ body {
  *------------------------------------------*/
 
 h1, h2, h3, h4, h5, h6 {
+    font-family : 'Yeseva One';
+    font-weight : 100;
     margin : 0 0 15px;
-    color  : #0e1555;
+    color  : #ffffff;
     }
 
 h1 {
     font-size   : 36px;
     line-height : 1.2em;
-    font-weight : 700;
+    /* font-weight : 700; */
     }
 
 h2 {
     font-size   : 30px;
     line-height : 1.5em;
-    font-weight : 400;
+    /* font-weight : 400; */
     }
 
 h3 {
     font-size   : 24px;
     line-height : 1.5em;
-    font-weight : 300;
+    /* font-weight : 300; */
     }
 
 h4 {
     font-size   : 18px;
     line-height : 1.5em;
-    font-weight : 300;
+    /* font-weight : 300; */
     }
 
 h5 {
     font-size   : 16px;
     line-height : 1.5em;
-    font-weight : 500;
+    /* font-weight : 500; */
     }
 
 h6 {
@@ -95,7 +97,7 @@ h6 {
  *------------------------------------------*/
 a {
     /*color              : #fd367e;*/
-    color: blue;
+    color: #FDB515;
     text-decoration    : none;
     -webkit-transition : all 0.3s ease 0s;
     -moz-transition    : all 0.3s ease 0s;
@@ -114,7 +116,7 @@ a:active {
 a:hover,
 a:focus {
     text-decoration : none;
-    color           : gold;
+    color           : #FDB515;
     }
 
 p {
@@ -151,8 +153,8 @@ ul {
 .btn-primary {
     /*background-color : #fd367e;*/
     transition: 0.2s;
-    background-color : gold;
-    border-color     : gold;
+    background-color : #FDB515;
+    border-color     : #FDB515;
     color: gray;
     }
 
@@ -192,9 +194,8 @@ button:focus,
  * -------------------*/
 
 .gray-bg {
-    background-color : #f0f1f3;
-    border-top       : 1px solid #eeeeee;
-    border-bottom    : 1px solid #eeeeee;
+    background-color : #31313f;
+
     }
 
 .white-bg {
@@ -286,7 +287,7 @@ button:focus,
 
 .main-menu .nav li a:hover,
 .main-menu .nav li.active a {
-    color      : gold;
+    color      : #FDB515;
     background : transparent;
     }
 
@@ -307,7 +308,7 @@ button:focus,
 
     .main-menu .nav li a {
         padding : 5px 0;
-        color: #0e1555;
+        color: #003262;
         }
 
     .navbar-collapse {
@@ -333,7 +334,7 @@ button:focus,
     }
 
 .sticky-nav .nav li a {
-    color : #0e1555;
+    color : #003262;
     }
 
 .sticky-nav .navbar-toggle .icon-bar{
@@ -352,7 +353,7 @@ button:focus,
  *-------------------*/
 
 .jumbotron {
-    background            : url("../img/sathergate.jpg");
+    background            : url("../img/berkeley.jpg");
     background-size       : cover;
     padding               : 0;
     margin                : 0;
@@ -384,10 +385,12 @@ button:focus,
 .jumbotron .content h1 {
     color       : white;
     font-weight : bold;
+    font-size : 70px;
     }
 
 .jumbotron .content p.lead {
-    font-size   : 24px;
+    font-size   : 40px;
+    font-weight : 300;
     line-height : 1.5em;
     color       : white;
     }
@@ -434,12 +437,12 @@ button:focus,
 .section-title h1 {
     /*margin-bottom : 5px;*/
     margin-bottom: 20px;
-    /*color : gold;*/
+    color : rgb(255, 255, 255);
     }
 
 .section-title p {
     font-size : 18px;
-    color     : #888888;
+    color     : #ffffff;
     }
 
 /* ----------------------------------------------
@@ -724,7 +727,7 @@ button:focus,
 
 .footer .copyright-section {
     font-size : 13px;
-    color     : #888888;
+    color     : #FDB515;
     padding   : 30px 0;
     }
 
@@ -782,6 +785,7 @@ button:focus,
   list-style: none;
   text-align: center;
   padding-bottom: 20px;
+  font-weight: bolder;
 }
 .dates li{
   display: inline;
@@ -789,7 +793,7 @@ button:focus,
 }
 
 .dates li:hover {
-    color: gold;
+    color: #FDB515;
     cursor: pointer;
 }
 
