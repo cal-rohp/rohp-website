@@ -51,11 +51,11 @@ body {
 }
 
 .josefinsans {
-    font-family : 'Josefin Sans'
+    font-family : 'Josefin Sans' !important
 }
 
 .yesevaone {
-    font-family : 'Yeseva One';
+    font-family : 'Yeseva One' !important;
     font-size : 45px !important;
 }
 
