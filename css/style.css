@@ -51,11 +51,11 @@ body {
 }
 
 .josefinsans {
-    font-family : 'Josefin Sans'
+    font-family : 'Josefin Sans' !important
 }
 
 .yesevaone {
-    font-family : 'Yeseva One';
+    font-family : 'Yeseva One' !important;
     font-size : 45px !important;
 }
 
@@ -203,6 +203,10 @@ button:focus,
     outline : none;
     }
 
+.btn-selected {
+    color: #FDB515 !important
+}
+
 /* --------------------
  * Section Background
  * -------------------*/
@@ -339,7 +343,7 @@ button:focus,
     left               : 0;
     top                : 0;
     z-index            : 999;
-    background         : #ffffff !important;
+    background         : #2b2b37 !important;
     padding            : 5px 0;
     box-shadow         : 0 2px 5px rgba(0, 0, 0, .1);
     -webkit-transition : all .5s ease-in-out;
@@ -348,7 +352,8 @@ button:focus,
     }
 
 .sticky-nav .nav li a {
-    color : #003262;
+    color: #FFFFFF
+    /* color : #003262; */
     }
 
 .sticky-nav .navbar-toggle .icon-bar{
@@ -740,7 +745,7 @@ button:focus,
 .footer .copyright-section {
     font-size : 13px;
     color     : #FDB515;
-    padding   : 30px 0;
+    padding   : 10px 0;
     }
 
 .footer .copyright-section .copytext {
@@ -931,21 +936,6 @@ button:focus,
 .no-space-header {
     margin-top: 0px !important;
     font-size: 23px;
-}
-
-.custom-img {
-    width: 100%;
-    height: auto
-}
-
-.img-div {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.h-100 {
-    height: 100% !important
 }
 
 /* new card styles */
@@ -3144,14 +3134,14 @@ fieldset:disabled .btn {
 }
 
 .btn-outline-secondary {
-    color: #6c757d;
-    border-color: #6c757d
+    color: #003262;
+    border-color: #003262
 }
 
 .btn-outline-secondary:hover {
     color: #fff;
-    background-color: #6c757d;
-    border-color: #6c757d
+    background-color: #003262;
+    border-color: #003262
 }
 
 .btn-check:focus+.btn-outline-secondary,
@@ -3165,8 +3155,8 @@ fieldset:disabled .btn {
 .btn-outline-secondary.dropdown-toggle.show,
 .btn-outline-secondary:active {
     color: #fff;
-    background-color: #6c757d;
-    border-color: #6c757d
+    background-color: #003262;
+    border-color: #003262
 }
 
 .btn-check:active+.btn-outline-secondary:focus,
@@ -3179,7 +3169,7 @@ fieldset:disabled .btn {
 
 .btn-outline-secondary.disabled,
 .btn-outline-secondary:disabled {
-    color: #6c757d;
+    color: #003262;
     background-color: transparent
 }
 
@@ -3459,6 +3449,10 @@ fieldset:disabled .btn {
 .custom-font {
     padding-top: 5px;
     /* font-family: var(--bs-font-sans-serif); */
+}
+
+.medium-font {
+    font-weight: 300 !important;
 }
 
 .bold-font {
@@ -3934,4 +3928,15 @@ fieldset:disabled .btn {
     .modal-fullscreen-xxl-down .modal-footer {
         border-radius: 0
     }
+}
+
+.custom-img {
+    width: 100%;
+    height: auto
+}
+
+.img-div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
