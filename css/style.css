@@ -851,7 +851,7 @@ button:focus,
     margin: 0 20px;
 }
 
-.sponsor-button: hover {
+.sponsor-button:hover {
     cursor: pointer;
 }
 
@@ -4050,4 +4050,14 @@ fieldset:disabled .btn {
       padding:15px 20px 15px;
     }
   }
+
+.beartext {
+    left: 0;
+    position:absolute;
+    text-align:center;
+    top: 60px;
+    margin-left: 10px;
+    width: 100%;
+    font-size: 28px;
+}
   
