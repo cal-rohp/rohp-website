@@ -3969,6 +3969,7 @@ fieldset:disabled .btn {
   .carousel-control .glyphicon-chevron-left{
     top:35%;
     font-size: 20px;
+    color: #FDB515;
     left:5%;
     margin: 0;
   }
@@ -3976,6 +3977,7 @@ fieldset:disabled .btn {
   .carousel-control .glyphicon-chevron-right{
     top:35%;
     font-size: 20px;
+    color: #FDB515;
     left:33%;
     margin: 0;
   }
@@ -4000,56 +4002,6 @@ fieldset:disabled .btn {
     filter: alpha(opacity=60);
     outline: 0;
     opacity: 0.6;
-  }
-  
-  .left-button {
-    height:70px;
-    width:35px;
-    border-radius: 0 90px 90px 0;
-    top: 50%;
-    -webkit-transform: translate(0,-50%);
-    -ms-transform: translate(0,-50%);
-    transform: translate(0,-50%);
-    -moz-border-radius: 0 90px 90px 0;
-    -webkit-border-radius: 0 90px 90px 0;
-    background-color:  #FDB515;
-    display: inline-block;
-    position: relative;
-    float:left;
-    /*subpixel bug*/
-    margin-left: -1px; 
-  }
-  
-  .right-button {
-    height:70px;
-    width:35px;
-    border-radius: 90px 0 0 90px;
-    top: 50%;
-    -webkit-transform: translate(0,-50%);
-    -ms-transform: translate(0,-50%);
-    transform: translate(0,-50%);
-    -moz-border-radius: 90px 0 0 90px;
-    -webkit-border-radius: 90px 0 0 90px;
-    background-color:  #FDB515;
-    display: inline-block;
-    position: relative;
-    float:right;
-    /*subpixel bug*/
-    margin-right: -1px;
-  }
-  
-  
-  .carousel-caption {
-   display: none;
-   background: none repeat scroll 0 0  #FDB515;
-    bottom: 0;
-    font-size: 12px;
-    text-align: center;
-    opacity: 1;
-    padding:7px 30px 7px;
-    text-transform: uppercase;
-    z-index:11;
-    pointer-events:none;
   }
   
   @media screen and (min-width: 768px) {
