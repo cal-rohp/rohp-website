@@ -12,18 +12,19 @@
     <link href="img/favicon.jpg" rel="icon">
 
     <!-- web-fonts -->
-    <link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,700,500' rel='stylesheet"
+    <link href="https://fonts.googleapis.com/css2?family=Yeseva+One&display=swap" rel="stylesheet"
         type="text/css">
 
-    <!-- Bootstrap -->
-    <link rel="stylesheet"
-        href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@100;200;300;400&display=swap"
+        rel="stylesheet" type="text/css">
 
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
 
     <!-- Style CSS -->
     <link href="css/style.css" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="css/accordion.css">
-
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
@@ -48,7 +49,7 @@
                     role="alert">
                     <strong>Notice!</strong> Due to COVID-19, all of our in-person programs have
                     been cancelled. However, we are offering various other opportunities, detailed
-                    <a href="#section-covid" class="alert-link page-scroll">here</a>.
+                    <a href="agenda.html" class="alert-link">here</a>.
                 </div>
             </div>
         </div>
@@ -73,11 +74,12 @@
                             <!-- Hidden li included to remove active class from about link when scrolled up past about section -->
                             <li class="hidden"><a href="#page-top"></a></li>
                             <li><a href="index.html">Home</a></li>
-                            <li><a href="agenda.html">Agenda</a></li>
+                            <li><a href="agenda.html" class="btn-selected">Agenda</a></li>
                             <li><a href="registration.html">Registration</a></li>
                             <li><a href="resources.html">Resources</a></li>
+                            <!-- <li><a class="page-scroll" href="#section-partner">Registration Form</a></li> -->
                             <li><a href="committee.html">Committee</a></li>
-                            <li><a href="faq.html">FAQs</a></li>
+                            <!-- <li><a class="page-scroll" href="#section-venue">FAQs</a></li> -->
                         </ul>
                     </div>
                     <!-- /.navbar-collapse -->
@@ -90,74 +92,67 @@
         </header>
 
 
-        <!-- .about-event -->
 
         <!-- .about-event -->
-        <div class="row">
-            <br>
-            <br>
-        </div>
-        <!--Youtube Carousel, sourced from codepen (see js file for link)-->
-        <div class="container">
-            <div class="row">
-                <div class="col-xs-12 text-center">
-                    <h1>Content Carousel</h1>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-sm-8 col-sm-offset-2">
-                    <div id="random_number1" class="carousel slide youtube-carousel"
-                        data-ride="carousel" data-interval="false">
-                        <div class="carousel-inner">
-                            <div class="video-container item active">
-                                <div class="youtube-video" id='CEAvNETkC5A'></div>
-                                <div class="carousel-caption">An Inside Look</div>
-                            </div>
-                            <div class="video-container item">
-                                <div class="youtube-video" id='Il_KGsw2miI'></div>
-                                <div class="carousel-caption">Austin IRL</div>
-                            </div>
-                            <div class=" video-container item ">
-                                <div class=" youtube-video" id='X5-24Gyg0yE'></div>
-                                <div class="carousel-caption">I will get a gf this year</div>
-                            </div>
-                        </div>
-                        <div class="controls">
-                            <a class="left carousel-control" href="#random_number1"
-                                data-slide="prev">
-                                <div class="left-button">
-                                    <div class="glyphicon glyphicon-chevron-left"></div>
+
+        <section id="section-covid" class="section-wrapper about-event gray-bg">
+            <div id="housing" class="container">
+                <div class="row">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="section-title">
+                                <div class="row">
+                                    <div class="col-xs-12 text-center">
+                                        <h1>Housing Tours</h1>
+                                        <p>We have compiled housing tours of common housing options
+                                            at Cal, feel free to browse.</p>
+                                    </div>
                                 </div>
-                            </a>
-                            <a class="right carousel-control" href="#random_number1"
-                                data-slide="next">
-                                <div class="right-button">
-                                    <div class="glyphicon glyphicon-chevron-right"></div>
+                                <div class="row">
+                                    <div class="col-sm-8 col-sm-offset-2">
+                                        <div id="random_number1"
+                                            class="carousel slide youtube-carousel"
+                                            data-ride="carousel" data-interval="false">
+                                            <div class="carousel-inner">
+                                                <div class="video-container item active">
+                                                    <div class="youtube-video" id='CEAvNETkC5A'>
+                                                    </div>
+                                                    <div class="carousel-caption">Video 1</div>
+                                                </div>
+                                                <div class="video-container item">
+                                                    <div class="youtube-video" id='M5bPQNFYbm8'>
+                                                    </div>
+                                                    <div class="carousel-caption">Video 2</div>
+                                                </div>
+                                            </div>
+                                            <div class="controls">
+                                                <a class="left carousel-control"
+                                                    href="#random_number1" data-slide="prev">
+                                                    <div class="left-button">
+                                                        <div
+                                                            class="glyphicon glyphicon-chevron-left">
+                                                        </div>
+                                                    </div>
+                                                </a>
+                                                <a class="right carousel-control"
+                                                    href="#random_number1" data-slide="next">
+                                                    <div class="right-button">
+                                                        <div
+                                                            class="glyphicon glyphicon-chevron-right">
+                                                        </div>
+                                                    </div>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
                                 </div>
-                            </a>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
-
-        <br><br>
-        <footer class="footer">
-            <div class="copyright-section">
-                <div class="container">
-                    <div class="col-md-12">
-                        <div class="copytext text-center">
-                            &copy; ALL RIGHTS RESERVED. COPYRIGHT © ROHP 2020.
-                            <a target="_blank" href="https://www.ocf.berkeley.edu"><img
-                                    src="https://www.ocf.berkeley.edu/hosting-logos/ocfbadge_mini8darkglow.png"
-                                    alt="Hosted by the OCF" style="border: 0;" id="ocf" /></a>
-                        </div>
-                    </div>
-                </div>
-                <!-- .container -->
-            </div>
-            <!-- .copyright-section -->
-        </footer>
+        </section>
+        <!-- .about-event -->
         <!-- jquery -->
         <script src="js/jquery-2.1.4.min.js"></script>
 
@@ -172,9 +167,28 @@
 
         <!--<script src="js/one-page-nav.js"></script>-->
         <script src="js/scripts.js"></script>
-        <script src="js/accordion.js"></script>
         <script src="js/youtube.js"></script>
+        <script src="js/accordion.js"></script>
         <script src="js/agenda.js"></script>
+
+        <footer class="footer">
+            <div class="copyright-section">
+                <div class="container">
+                    <div class="col-md-12">
+                        <div class="copytext text-center darkcolor"
+                            style="padding-top: 30px; padding-bottom: 30px">
+                            &copy; ALL RIGHTS RESERVED. COPYRIGHT © ROHP 2020.
+                            <a target="_blank" href="https://www.ocf.berkeley.edu"><img
+                                    src="https://www.ocf.berkeley.edu/hosting-logos/ocfbadge_mini8darkglow.png"
+                                    alt="Hosted by the OCF" style="border: 0;" id="ocf" /></a>
+                        </div>
+                    </div>
+                </div>
+                <!-- .container -->
+            </div>
+            <!-- .copyright-section -->
+        </footer>
+
 </body>
 
 </html>
