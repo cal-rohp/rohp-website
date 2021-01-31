@@ -2,1283 +2,925 @@
 <html>
 
 <head>
-  <meta charset="utf-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
-  <title>ROHP 2021</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>ROHP 2021</title>
 
-  <!-- favicon -->
-  <link href="img/favicon.jpg" rel="icon">
+    <!-- favicon -->
+    <link href="img/favicon.jpg" rel="icon">
 
-  <!-- web-fonts -->
-  <link href="https://fonts.googleapis.com/css2?family=Yeseva+One&display=swap" rel="stylesheet"
-    type="text/css">
+    <!-- web-fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Yeseva+One&display=swap" rel="stylesheet"
+        type="text/css">
 
-  <link
-    href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@100;200;300;400&display=swap"
-    rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@100;200;300;400&display=swap" rel="stylesheet"
+        type="text/css">
 
-  <!-- Bootstrap -->
-  <link href="css/bootstrap.min.css" rel="stylesheet">
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
 
-  <!-- Style CSS -->
-  <link href="css/style.css" rel="stylesheet">
-  <link rel="stylesheet" type="text/css" href="css/accordion.css">
+    <!-- Style CSS -->
+    <link href="css/style.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="css/accordion.css">
 
-  <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
-  <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-  <!--[if lt IE 9]>
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
     <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
     <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
 
-  <style>
-    .bd-placeholder-img {
-      font-size: 1.125rem;
-      text-anchor: middle;
-      -webkit-user-select: none;
-      -moz-user-select: none;
-      user-select: none;
-    }
-
-    @media (min-width: 768px) {
-      .bd-placeholder-img-lg {
-        font-size: 3.5rem;
-      }
-    }
-  </style>
+    <style>
+        .bd-placeholder-img {
+          font-size: 1.125rem;
+          text-anchor: middle;
+          -webkit-user-select: none;
+          -moz-user-select: none;
+          user-select: none;
+        }
+  
+        @media (min-width: 768px) {
+          .bd-placeholder-img-lg {
+            font-size: 3.5rem;
+          }
+        }
+      </style>
 
 </head>
 
 <body id="page-top" data-spy="scroll" data-target=".navbar">
 
-  <div id="overlay"></div>
-  <div id="main-wrapper">
-    <!-- Page Preloader -->
-    <div id="preloader">
-      <div id="status">
-        <div class="status-mes"></div>
-      </div>
-    </div>
-    <div class="container-fluid">
-      <div class="row">
-        <div class="alert alert-danger text-center" style="margin-bottom:0px; height:auto;"
-          role="alert">
-          <strong>Notice!</strong> Due to COVID-19, we will not be having in-person programs.
-          Please take a look at our upcoming events
-          <a href="agenda.html" class="alert-link">here</a>.
+    <div id="overlay"></div>
+    <div id="main-wrapper">
+        <!-- Page Preloader -->
+        <div id="preloader">
+            <div id="status">
+                <div class="status-mes"></div>
+            </div>
         </div>
-      </div>
-    </div>
-  </div>
-  </div>
-  </div>
-  <header class="header">
-    <!-- Navigation -->
-    <nav class="navbar main-menu" role="navigation">
-      <div class="container">
-        <div class="navbar-header">
-          <button type="button" class="navbar-toggle" data-toggle="collapse"
-            data-target=".navbar-main-collapse">
-            <span class="sr-only">Toggle navigation</span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-          </button>
-          <!-- <a class="navbar-brand page-scroll" href="#page-top"><img src="img/logo.png" alt=""></a> -->
+        <div class="container-fluid">
+            <div class="row">
+                <div class="alert alert-danger text-center" style="margin-bottom:0px; height:auto;"
+                    role="alert">
+                    <strong>Notice!</strong> Due to COVID-19, we will not be having in-person programs.
+                    Please take a look at our upcoming events
+                    <a href="agenda.html" class="alert-link">here</a>.
+                </div>
+            </div>
         </div>
+        <header class="header">
+            <!-- Navigation -->
+            <nav class="navbar main-menu" role="navigation">
+                <div class="container">
+                    <div class="navbar-header">
+                        <button type="button" class="navbar-toggle" data-toggle="collapse"
+                            data-target=".navbar-main-collapse">
+                            <span class="sr-only">Toggle navigation</span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </button>
+                        <!-- <a class="navbar-brand page-scroll" href="#page-top"><img src="img/logo.png" alt=""></a> -->
+                    </div>
 
-        <!-- Collect the nav links, forms, and other content for toggling -->
-        <div class="collapse navbar-collapse navbar-right navbar-main-collapse">
-          <ul class="nav navbar-nav">
-            <!-- Hidden li included to remove active class from about link when scrolled up past about section -->
-            <li class="hidden"><a href="#page-top"></a></li>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="agenda.html">Agenda</a></li>
-            <li><a href="registration.html">Registration</a></li>
-            <li><a href="resources.html">Resources</a></li>
-            <!-- <li><a class="page-scroll" href="#section-partner">Registration Form</a></li> -->
-            <li><a href="committee.html" class="btn-selected">Committee</a></li>
-            <!-- <li><a class="page-scroll" href="#section-venue">FAQs</a></li> -->
-          </ul>
-        </div>
-        <!-- /.navbar-collapse -->
-      </div>
-      <!-- /.container -->
-    </nav>
+                    <!-- Collect the nav links, forms, and other content for toggling -->
+                    <div class="collapse navbar-collapse navbar-right navbar-main-collapse">
+                        <ul class="nav navbar-nav">
+                            <!-- Hidden li included to remove active class from about link when scrolled up past about section -->
+                            <li class="hidden"><a href="#page-top"></a></li>
+                            <li><a href="index.html">Home</a></li>
+                            <li><a href="agenda.html">Agenda</a></li>
+                            <li><a href="registration.html">Registration</a></li>
+                            <!-- <li><a class="page-scroll" href="#section-partner">Registration Form</a></li> -->
+                            <li><a href="committee.html" class="btn-selected">Committee</a></li>
+                            <!-- <li><a class="page-scroll" href="#section-venue">FAQs</a></li> -->
+                        </ul>
+                    </div>
+                    <!-- /.navbar-collapse -->
+                </div>
+                <!-- /.container -->
+            </nav>
 
-    <!-- .nav -->
+            <!-- .nav -->
 
-  </header>
+        </header>
 
-  <section id="section-speaker" class="section-wrapper team gray-bg">
-    <div class="container">
-      <div class="row">
-        <div class="col-md-12">
-          <div class="section-title">
-            <h1>THE COMMITTEE</h1>
-            <ul>
-              <li>We are a diverse set of students from different backgrounds
-                interested in all kinds of things! You can learn a little now by
-                reading our bios but make sure to come talk to us in person! We are
-                here to help you make the right decision!</li>
-            </ul>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <div class="album py-5 bg-light">
-    <div class="container">
-      <div class="row row-cols-1 row-cols-sm-1 row-cols-md-2 row-cols-lg-4 g-3">
-        <div class="col">
-          <div class="card shadow-sm h-100">
-            <svg class="bd-placeholder-img card-img-top" viewBox="0 0 100 100" role="img"
-              preserveAspectRatio="xMidYMid meet" focusable="false">
-              <image href="img/team/sarah.jpeg" width="100%" height="100%">
-            </svg>
-            <div class="card-body">
-              <p class="card-text custom-font bold-font darkcolor"
-                style="font-size:160%; padding-top: 10px !important;">Sarah Truong
-                (she/her/hers)
-              </p>
-              <p class="text-muted custom-font darkcolor medium-font">Earth and Planetary
-                Science, Computer Science, Data Science</p>
-              <div class="d-flex justify-content-between align-items-center card-bottom">
-                <small class="text-muted custom-font medium-font darkcolor">Class of
-                  2021</small>
-                <div class="btn-group">
-                  <button type="button" class="btn btn-outline-secondary" data-toggle="modal"
-                    data-target="#sarah-bio">About Me</button>
-                  <a href="https://rohp1.typeform.com/to/id22Y7" target="_blank"
-                    class="btn btn-outline-secondary" role="button">Contact Me</a>
+        <section id="section-speaker" class="section-wrapper team gray-bg">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="section-title">
+                            <h1>THE COMMITTEE</h1>
+                            <ul>
+                                <li>We are a diverse set of students from different backgrounds
+                                    interested in all kinds of things! You can learn a little now by
+                                    reading our bios but make sure to come talk to us in person! We are
+                                    here to help you make the right decision!</li>
+                            </ul>
+                        </div>
+                    </div>
                 </div>
-              </div>
+                
+                <div class="album py-5 bg-light">
+                    <div class="container">
+                      <div class="row row-cols-1 row-cols-sm-1 row-cols-md-2 row-cols-lg-4 g-3">
+                        <div class="col">
+                            <div class="card shadow-sm h-100">
+                              <svg class="bd-placeholder-img card-img-top" viewBox="0 0 100 100" role="img" preserveAspectRatio="xMidYMid meet" focusable="false"><image href="img/team/sarah.jpeg" width="100%" height="100%"></svg>
+                              <div class="card-body">
+                                <p class="card-text custom-font bold-font darkcolor" style="font-size:160%; padding-top: 10px !important;">Sarah Truong</p>
+                                <p class="text-muted custom-font darkcolor medium-font">Earth and Planetary Science, Computer Science, Data Science</p>
+                                <div class="d-flex justify-content-between align-items-center card-bottom">
+                                  <small class="text-muted custom-font medium-font darkcolor">Class of 2021</small>
+                                  <div class="btn-group">
+                                  <button type="button" class="btn btn-outline-secondary" data-toggle="modal" data-target="#sarah-bio">About Me</button>
+                                  <a href="https://rohp1.typeform.com/to/id22Y7" target="_blank" class="btn btn-outline-secondary" role="button">Contact Me</a>  
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        <div class="col">
+                            <div class="card shadow-sm h-100">
+                              <svg class="bd-placeholder-img card-img-top" viewBox="0 0 100 100" role="img" preserveAspectRatio="xMidYMid meet" focusable="false"><image href="img/team/matt.jpeg" width="100%" height="100%"></svg>
+                              <div class="card-body">
+                                <p class="card-text custom-font bold-font darkcolor" style="font-size:160%;  padding-top: 10px !important;">Matthew Clark</p>
+                                <p class="text-muted custom-font darkcolor medium-font">Molecular and Cell Biology</p>
+                                <div class="d-flex justify-content-between align-items-center card-bottom">
+                                  <small class="text-muted custom-font medium-font darkcolor">Class of 2022</small>
+                                  <div class="btn-group">
+                                  <button type="button" class="btn btn-outline-secondary" data-toggle="modal" data-target="#matthew-bio">About Me</button>
+                                  <a href="https://rohp1.typeform.com/to/id22Y7" target="_blank" class="btn btn-outline-secondary" role="button">Contact Me</a>  
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="col">
+                            <div class="card shadow-sm h-100">
+                              <svg class="bd-placeholder-img card-img-top" viewBox="0 0 100 100" role="img" preserveAspectRatio="xMidYMid meet" focusable="false"><image href="img/team/dom.jpeg" width="100%" height="100%"></svg>
+                              <div class="card-body">
+                                <p class="card-text custom-font bold-font darkcolor" style="font-size:160%;  padding-top: 10px !important;">Dom Gutierrez</p>
+                                <p class="text-muted custom-font darkcolor medium-font">History</p>
+                                <div class="d-flex justify-content-between align-items-center card-bottom">
+                                  <small class="text-muted custom-font medium-font darkcolor">Class of 2022</small>
+                                  <div class="btn-group">
+                                  <button type="button" class="btn btn-outline-secondary" data-toggle="modal" data-target="#dom-bio">About Me</button>
+                                  <a href="https://rohp1.typeform.com/to/id22Y7" target="_blank" class="btn btn-outline-secondary" role="button">Contact Me</a>  
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="col">
+                            <div class="card shadow-sm h-100">
+                              <svg class="bd-placeholder-img card-img-top" viewBox="0 0 100 100" role="img" preserveAspectRatio="xMidYMid meet" focusable="false"><image href="img/team/shantanu.jpeg" width="100%" height="100%"></svg>
+                              <div class="card-body">
+                                <p class="card-text custom-font bold-font darkcolor" style="font-size:160%;  padding-top: 10px !important;">Shantanu Kadam</p>
+                                <p class="text-muted custom-font darkcolor medium-font">Physics, Environmental and Economic Policy</p>
+                                <div class="d-flex justify-content-between align-items-center card-bottom">
+                                  <small class="text-muted custom-font medium-font darkcolor">Class of 2022</small>
+                                  <div class="btn-group">
+                                  <button type="button" class="btn btn-outline-secondary" data-toggle="modal" data-target="#shantanu-bio">About Me</button>
+                                  <a href="https://rohp1.typeform.com/to/id22Y7" target="_blank" class="btn btn-outline-secondary" role="button">Contact Me</a>  
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="col">
+                            <div class="card shadow-sm h-100">
+                              <svg class="bd-placeholder-img card-img-top" viewBox="0 0 100 100" role="img" preserveAspectRatio="xMidYMid meet" focusable="false"><image href="img/team/angelina.jpeg" width="100%" height="100%"></svg>
+                              <div class="card-body">
+                                <p class="card-text custom-font bold-font darkcolor" style="font-size:160%;  padding-top: 10px !important;">Ya Chi Angelina Liang</p>
+                                <p class="text-muted custom-font darkcolor medium-font">Psychology, Molecular and Cell Biology</p>
+                                <div class="d-flex justify-content-between align-items-center card-bottom">
+                                  <small class="text-muted custom-font medium-font darkcolor">Class of 2022</small>
+                                  <div class="btn-group">
+                                  <button type="button" class="btn btn-outline-secondary" data-toggle="modal" data-target="#angelina-bio">About Me</button>
+                                  <a href="https://rohp1.typeform.com/to/id22Y7" target="_blank" class="btn btn-outline-secondary" role="button">Contact Me</a>  
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="col">
+                            <div class="card shadow-sm h-100">
+                              <svg class="bd-placeholder-img card-img-top" viewBox="0 0 100 100" role="img" preserveAspectRatio="xMidYMid meet" focusable="false"><image href="img/team/kat.jpeg" width="100%" height="100%"></svg>
+                              <div class="card-body">
+                                <p class="card-text custom-font bold-font darkcolor" style="font-size:160%;  padding-top: 10px !important;">Kat Bako</p>
+                                <p class="text-muted custom-font darkcolor medium-font">Molecular Environmental Biology</p>
+                                <div class="d-flex justify-content-between align-items-center card-bottom">
+                                  <small class="text-muted custom-font medium-font darkcolor">Class of 2023</small>
+                                  <div class="btn-group">
+                                  <button type="button" class="btn btn-outline-secondary" data-toggle="modal" data-target="#kat-bio">About Me</button>
+                                  <a href="https://rohp1.typeform.com/to/id22Y7" target="_blank" class="btn btn-outline-secondary" role="button">Contact Me</a>  
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="col">
+                            <div class="card shadow-sm h-100">
+                              <svg class="bd-placeholder-img card-img-top" viewBox="0 0 100 100" role="img" preserveAspectRatio="xMidYMid meet" focusable="false"><image href="img/team/marie.jpeg" width="100%" height="100%"></svg>
+                              <div class="card-body">
+                                <p class="card-text custom-font bold-font darkcolor" style="font-size:160%;  padding-top: 10px !important;">Marie Bellevue</p>
+                                <p class="text-muted custom-font darkcolor medium-font">Media Studies, Psychology</p>
+                                <div class="d-flex justify-content-between align-items-center card-bottom">
+                                  <small class="text-muted custom-font medium-font darkcolor">Class of 2023</small>
+                                  <div class="btn-group">
+                                  <button type="button" class="btn btn-outline-secondary" data-toggle="modal" data-target="#marie-bio">About Me</button>
+                                  <a href="https://rohp1.typeform.com/to/id22Y7" target="_blank" class="btn btn-outline-secondary" role="button">Contact Me</a>  
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="col">
+                            <div class="card shadow-sm h-100">
+                              <svg class="bd-placeholder-img card-img-top" viewBox="0 0 100 100" role="img" preserveAspectRatio="xMidYMid meet" focusable="false"><image href="img/team/aniruddh.jpeg" width="100%" height="100%"></svg>
+                              <div class="card-body">
+                                <p class="card-text custom-font bold-font darkcolor" style="font-size:160%;  padding-top: 10px !important;">Aniruddh Khanwale</p>
+                                <p class="text-muted custom-font darkcolor medium-font">Materials Science and Engineering, EECS</p>
+                                <div class="d-flex justify-content-between align-items-center card-bottom">
+                                  <small class="text-muted custom-font medium-font darkcolor">Class of 2023</small>
+                                  <div class="btn-group">
+                                  <button type="button" class="btn btn-outline-secondary" data-toggle="modal" data-target="#aniruddh-bio">About Me</button>
+                                  <a href="https://rohp1.typeform.com/to/id22Y7" target="_blank" class="btn btn-outline-secondary" role="button">Contact Me</a>  
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="col">
+                            <div class="card shadow-sm h-100">
+                              <svg class="bd-placeholder-img card-img-top" viewBox="0 0 100 100" role="img" preserveAspectRatio="xMidYMid meet" focusable="false"><image href="img/team/austin.jpeg" width="100%" height="100%"></svg>
+                              <div class="card-body">
+                                <p class="card-text custom-font bold-font darkcolor" style="font-size:160%;  padding-top: 10px !important;">Austin Patel</p>
+                                <p class="text-muted custom-font darkcolor medium-font">EECS</p>
+                                <div class="d-flex justify-content-between align-items-center card-bottom">
+                                  <small class="text-muted custom-font medium-font darkcolor">Class of 2023</small>
+                                  <div class="btn-group">
+                                  <button type="button" class="btn btn-outline-secondary" data-toggle="modal" data-target="#austin-bio">About Me</button>
+                                  <a href="https://rohp1.typeform.com/to/id22Y7" target="_blank" class="btn btn-outline-secondary" role="button">Contact Me</a>  
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="col">
+                            <div class="card shadow-sm h-100">
+                              <svg class="bd-placeholder-img card-img-top" viewBox="0 0 100 100" role="img" preserveAspectRatio="xMidYMid meet" focusable="false"><image href="img/team/owen.jpeg" width="100%" height="100%"></svg>
+                              <div class="card-body">
+                                <p class="card-text custom-font bold-font darkcolor" style="font-size:160%;  padding-top: 10px !important;">Owen Zuidema</p>
+                                <p class="text-muted custom-font darkcolor medium-font">Environmental Engineering Science</p>
+                                <div class="d-flex justify-content-between align-items-center card-bottom">
+                                  <small class="text-muted custom-font medium-font darkcolor">Class of 2023</small>
+                                  <div class="btn-group">
+                                  <button type="button" class="btn btn-outline-secondary" data-toggle="modal" data-target="#owen-bio">About Me</button>
+                                  <a href="https://rohp1.typeform.com/to/id22Y7" target="_blank" class="btn btn-outline-secondary" role="button">Contact Me</a>  
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="col">
+                            <div class="card shadow-sm h-100">
+                              <svg class="bd-placeholder-img card-img-top" viewBox="0 0 100 100" role="img" preserveAspectRatio="xMidYMid meet" focusable="false"><image href="img/team/marisa.jpeg" width="100%" height="100%"></svg>
+                              <div class="card-body">
+                                <p class="card-text custom-font bold-font darkcolor" style="font-size:160%;  padding-top: 10px !important;">Marisa Balades</p>
+                                <p class="text-muted custom-font darkcolor medium-font">Business Administration</p>
+                                <div class="d-flex justify-content-between align-items-center card-bottom">
+                                  <small class="text-muted custom-font medium-font darkcolor">Class of 2024</small>
+                                  <div class="btn-group">
+                                  <button type="button" class="btn btn-outline-secondary" data-toggle="modal" data-target="#marisa-bio">About Me</button>
+                                  <a href="https://rohp1.typeform.com/to/id22Y7" target="_blank" class="btn btn-outline-secondary" role="button">Contact Me</a>  
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="col">
+                            <div class="card shadow-sm h-100">
+                              <svg class="bd-placeholder-img card-img-top" viewBox="0 0 100 100" role="img" preserveAspectRatio="xMidYMid meet" focusable="false"><image href="img/team/avikam.jpeg" width="100%" height="100%"></svg>
+                              <div class="card-body">
+                                <p class="card-text custom-font bold-font darkcolor" style="font-size:160%;  padding-top: 10px !important;">Avikam Chauhan</p>
+                                <p class="text-muted custom-font darkcolor medium-font">Computer Science</p>
+                                <div class="d-flex justify-content-between align-items-center card-bottom">
+                                  <small class="text-muted custom-font medium-font darkcolor">Class of 2024</small>
+                                  <div class="btn-group">
+                                  <button type="button" class="btn btn-outline-secondary" data-toggle="modal" data-target="#avikam-bio">About Me</button>
+                                  <a href="https://rohp1.typeform.com/to/id22Y7" target="_blank" class="btn btn-outline-secondary" role="button">Contact Me</a>  
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="col">
+                            <div class="card shadow-sm h-100">
+                              <svg class="bd-placeholder-img card-img-top" viewBox="0 0 100 100" role="img" preserveAspectRatio="xMidYMid meet" focusable="false"><image href="img/team/mark.jpeg" width="100%" height="100%"></svg>
+                              <div class="card-body">
+                                <p class="card-text custom-font bold-font darkcolor" style="font-size:160%;  padding-top: 10px !important;">Mark Gonzalez</p>
+                                <p class="text-muted custom-font darkcolor medium-font">Computer Science</p>
+                                <div class="d-flex justify-content-between align-items-center card-bottom">
+                                  <small class="text-muted custom-font medium-font darkcolor">Class of 2024</small>
+                                  <div class="btn-group">
+                                  <button type="button" class="btn btn-outline-secondary" data-toggle="modal" data-target="#mark-bio">About Me</button>
+                                  <a href="https://rohp1.typeform.com/to/id22Y7" target="_blank" class="btn btn-outline-secondary" role="button">Contact Me</a>  
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="col">
+                            <div class="card shadow-sm h-100">
+                              <svg class="bd-placeholder-img card-img-top" viewBox="0 0 100 100" role="img" preserveAspectRatio="xMidYMid meet" focusable="false"><image href="img/team/ana.jpeg" width="100%" height="100%"></svg>
+                              <div class="card-body">
+                                <p class="card-text custom-font bold-font darkcolor" style="font-size:160%;  padding-top: 10px !important;">Ana Eva Jimenez</p>
+                                <p class="text-muted custom-font darkcolor medium-font">Ethnic Studies, Legal Studies</p>
+                                <div class="d-flex justify-content-between align-items-center card-bottom">
+                                  <small class="text-muted custom-font medium-font darkcolor">Class of 2024</small>
+                                  <div class="btn-group">
+                                  <button type="button" class="btn btn-outline-secondary" data-toggle="modal" data-target="#ana-bio">About Me</button>
+                                  <a href="https://rohp1.typeform.com/to/id22Y7" target="_blank" class="btn btn-outline-secondary" role="button">Contact Me</a>  
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="col">
+                            <div class="card shadow-sm h-100">
+                              <svg class="bd-placeholder-img card-img-top" viewBox="0 0 100 100" role="img" preserveAspectRatio="xMidYMid meet" focusable="false"><image href="img/team/esther.jpeg" width="100%" height="100%"></svg>
+                              <div class="card-body">
+                                <p class="card-text custom-font bold-font darkcolor" style="font-size:160%;  padding-top: 10px !important;">Esther Jung</p>
+                                <p class="text-muted custom-font darkcolor medium-font">Public Health</p>
+                                <div class="d-flex justify-content-between align-items-center card-bottom">
+                                  <small class="text-muted custom-font medium-font darkcolor">Class of 2024</small>
+                                  <div class="btn-group">
+                                  <button type="button" class="btn btn-outline-secondary" data-toggle="modal" data-target="#esther-bio">About Me</button>
+                                  <a href="https://rohp1.typeform.com/to/id22Y7" target="_blank" class="btn btn-outline-secondary" role="button">Contact Me</a>  
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="col">
+                            <div class="card shadow-sm h-100">
+                              <svg class="bd-placeholder-img card-img-top" viewBox="0 0 100 100" role="img" preserveAspectRatio="xMidYMid meet" focusable="false"><image href="img/team/jaimie.jpeg" width="100%" height="100%"></svg>
+                              <div class="card-body">
+                                <p class="card-text custom-font bold-font darkcolor" style="font-size:160%;  padding-top: 10px !important;">Jaimie Lee</p>
+                                <p class="text-muted custom-font darkcolor medium-font">Public Health, Psychology</p>
+                                <div class="d-flex justify-content-between align-items-center card-bottom">
+                                  <small class="text-muted custom-font medium-font darkcolor">Class of 2024</small>
+                                  <div class="btn-group">
+                                  <button type="button" class="btn btn-outline-secondary" data-toggle="modal" data-target="#jaimie-bio">About Me</button>
+                                  <a href="https://rohp1.typeform.com/to/id22Y7" target="_blank" class="btn btn-outline-secondary" role="button">Contact Me</a>  
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="col">
+                            <div class="card shadow-sm h-100">
+                              <svg class="bd-placeholder-img card-img-top" viewBox="0 0 100 100" role="img" preserveAspectRatio="xMidYMid meet" focusable="false"><image href="img/team/osbaldo.jpeg" width="100%" height="100%"></svg>
+                              <div class="card-body">
+                                <p class="card-text custom-font bold-font darkcolor" style="font-size:160%;  padding-top: 10px !important;">Osbaldo Longoria Nava</p>
+                                <p class="text-muted custom-font darkcolor medium-font">Sustainable Environmental Design</p>
+                                <div class="d-flex justify-content-between align-items-center card-bottom">
+                                  <small class="text-muted custom-font medium-font darkcolor">Class of 2024</small>
+                                  <div class="btn-group">
+                                  <button type="button" class="btn btn-outline-secondary" data-toggle="modal" data-target="#osbaldo-bio">About Me</button>
+                                  <a href="https://rohp1.typeform.com/to/id22Y7" target="_blank" class="btn btn-outline-secondary" role="button">Contact Me</a>  
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="col">
+                            <div class="card shadow-sm h-100">
+                              <svg class="bd-placeholder-img card-img-top" viewBox="0 0 100 100" role="img" preserveAspectRatio="xMidYMid meet" focusable="false"><image href="img/team/denise.jpeg" width="100%" height="100%"></svg>
+                              <div class="card-body">
+                                <p class="card-text custom-font bold-font darkcolor" style="font-size:160%;  padding-top: 10px !important;">Denise Robles</p>
+                                <p class="text-muted custom-font darkcolor medium-font">Bioengineering</p>
+                                <div class="d-flex justify-content-between align-items-center card-bottom">
+                                  <small class="text-muted custom-font medium-font darkcolor">Class of 2024</small>
+                                  <div class="btn-group">
+                                  <button type="button" class="btn btn-outline-secondary" data-toggle="modal" data-target="#denise-bio">About Me</button>
+                                  <a href="https://rohp1.typeform.com/to/id22Y7" target="_blank" class="btn btn-outline-secondary" role="button">Contact Me</a>  
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="col">
+                            <div class="card shadow-sm h-100">
+                              <svg class="bd-placeholder-img card-img-top" viewBox="0 0 100 100" role="img" preserveAspectRatio="xMidYMid meet" focusable="false"><image href="img/team/shukri.jpeg" width="100%" height="100%"></svg>
+                              <div class="card-body">
+                                <p class="card-text custom-font bold-font darkcolor" style="font-size:160%;  padding-top: 10px !important;">Shukri Suhir</p>
+                                <p class="text-muted custom-font darkcolor medium-font">Public Health, Molecular and Cell Biology</p>
+                                <div class="d-flex justify-content-between align-items-center card-bottom">
+                                  <small class="text-muted custom-font medium-font darkcolor">Class of 2024</small>
+                                  <div class="btn-group">
+                                  <button type="button" class="btn btn-outline-secondary" data-toggle="modal" data-target="#shukri-bio">About Me</button>
+                                  <a href="https://rohp1.typeform.com/to/id22Y7" target="_blank" class="btn btn-outline-secondary" role="button">Contact Me</a>  
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                      </div>
+                    </div>
+                  </div>
             </div>
-          </div>
-        </div>
-        <div class="col">
-          <div class="card shadow-sm h-100">
-            <svg class="bd-placeholder-img card-img-top" viewBox="0 0 100 100" role="img"
-              preserveAspectRatio="xMidYMid meet" focusable="false">
-              <image href="img/team/matt.jpeg" width="100%" height="100%">
-            </svg>
-            <div class="card-body">
-              <p class="card-text custom-font bold-font darkcolor"
-                style="font-size:160%;  padding-top: 10px !important;">Matthew Clark
-                (he/him/his)
-              </p>
-              <p class="text-muted custom-font darkcolor medium-font">Molecular and Cell
-                Biology</p>
-              <div class="d-flex justify-content-between align-items-center card-bottom">
-                <small class="text-muted custom-font medium-font darkcolor">Class of
-                  2022</small>
-                <div class="btn-group">
-                  <button type="button" class="btn btn-outline-secondary" data-toggle="modal"
-                    data-target="#matthew-bio">About Me</button>
-                  <a href="https://rohp1.typeform.com/to/id22Y7" target="_blank"
-                    class="btn btn-outline-secondary" role="button">Contact Me</a>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="col">
-          <div class="card shadow-sm h-100">
-            <svg class="bd-placeholder-img card-img-top" viewBox="0 0 100 100" role="img"
-              preserveAspectRatio="xMidYMid meet" focusable="false">
-              <image href="img/team/dom.jpeg" width="100%" height="100%">
-            </svg>
-            <div class="card-body">
-              <p class="card-text custom-font bold-font darkcolor"
-                style="font-size:160%;  padding-top: 10px !important;">Dom Gutierrez
-                (he/him/his)</p>
-              <p class="text-muted custom-font darkcolor medium-font">History</p>
-              <div class="d-flex justify-content-between align-items-center card-bottom">
-                <small class="text-muted custom-font medium-font darkcolor">Class of
-                  2022</small>
-                <div class="btn-group">
-                  <button type="button" class="btn btn-outline-secondary" data-toggle="modal"
-                    data-target="#dom-bio">About Me</button>
-                  <a href="https://rohp1.typeform.com/to/id22Y7" target="_blank"
-                    class="btn btn-outline-secondary" role="button">Contact Me</a>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="col">
-          <div class="card shadow-sm h-100">
-            <svg class="bd-placeholder-img card-img-top" viewBox="0 0 100 100" role="img"
-              preserveAspectRatio="xMidYMid meet" focusable="false">
-              <image href="img/team/shantanu.jpeg" width="100%" height="100%">
-            </svg>
-            <div class="card-body">
-              <p class="card-text custom-font bold-font darkcolor"
-                style="font-size:160%;  padding-top: 10px !important;">Shantanu Kadam
-                (he/him/his)</p>
-              <p class="text-muted custom-font darkcolor medium-font">Physics,
-                Environmental
-                and Economic Policy</p>
-              <div class="d-flex justify-content-between align-items-center card-bottom">
-                <small class="text-muted custom-font medium-font darkcolor">Class of
-                  2022</small>
-                <div class="btn-group">
-                  <button type="button" class="btn btn-outline-secondary" data-toggle="modal"
-                    data-target="#shantanu-bio">About Me</button>
-                  <a href="https://rohp1.typeform.com/to/id22Y7" target="_blank"
-                    class="btn btn-outline-secondary" role="button">Contact Me</a>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="col">
-          <div class="card shadow-sm h-100">
-            <svg class="bd-placeholder-img card-img-top" viewBox="0 0 100 100" role="img"
-              preserveAspectRatio="xMidYMid meet" focusable="false">
-              <image href="img/team/angelina.jpeg" width="100%" height="100%">
-            </svg>
-            <div class="card-body">
-              <p class="card-text custom-font bold-font darkcolor"
-                style="font-size:160%;  padding-top: 10px !important;">Ya Chi Angelina
-                Liang
-                (she/her/hers)
-              </p>
-              <p class="text-muted custom-font darkcolor medium-font">Psychology,
-                Molecular
-                and Cell Biology</p>
-              <div class="d-flex justify-content-between align-items-center card-bottom">
-                <small class="text-muted custom-font medium-font darkcolor">Class of
-                  2022</small>
-                <div class="btn-group">
-                  <button type="button" class="btn btn-outline-secondary" data-toggle="modal"
-                    data-target="#angelina-bio">About Me</button>
-                  <a href="https://rohp1.typeform.com/to/id22Y7" target="_blank"
-                    class="btn btn-outline-secondary" role="button">Contact Me</a>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="col">
-          <div class="card shadow-sm h-100">
-            <svg class="bd-placeholder-img card-img-top" viewBox="0 0 100 100" role="img"
-              preserveAspectRatio="xMidYMid meet" focusable="false">
-              <image href="img/team/kat.jpeg" width="100%" height="100%">
-            </svg>
-            <div class="card-body">
-              <p class="card-text custom-font bold-font darkcolor"
-                style="font-size:160%;  padding-top: 10px !important;">Kat Bako <br>
-                (she/her/hers)
-              </p>
-              <p class="text-muted custom-font darkcolor medium-font">Molecular
-                Environmental
-                Biology</p>
-              <div class="d-flex justify-content-between align-items-center card-bottom">
-                <small class="text-muted custom-font medium-font darkcolor">Class of
-                  2023</small>
-                <div class="btn-group">
-                  <button type="button" class="btn btn-outline-secondary" data-toggle="modal"
-                    data-target="#kat-bio">About Me</button>
-                  <a href="https://rohp1.typeform.com/to/id22Y7" target="_blank"
-                    class="btn btn-outline-secondary" role="button">Contact Me</a>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="col">
-          <div class="card shadow-sm h-100">
-            <svg class="bd-placeholder-img card-img-top" viewBox="0 0 100 100" role="img"
-              preserveAspectRatio="xMidYMid meet" focusable="false">
-              <image href="img/team/marie.jpeg" width="100%" height="100%">
-            </svg>
-            <div class="card-body">
-              <p class="card-text custom-font bold-font darkcolor"
-                style="font-size:160%;  padding-top: 10px !important;">Marie Bellevue
-                (she/her/hers)</p>
-              <p class="text-muted custom-font darkcolor medium-font">Media Studies,
-                Psychology</p>
-              <div class="d-flex justify-content-between align-items-center card-bottom">
-                <small class="text-muted custom-font medium-font darkcolor">Class of
-                  2023</small>
-                <div class="btn-group">
-                  <button type="button" class="btn btn-outline-secondary" data-toggle="modal"
-                    data-target="#marie-bio">About Me</button>
-                  <a href="https://rohp1.typeform.com/to/id22Y7" target="_blank"
-                    class="btn btn-outline-secondary" role="button">Contact Me</a>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="col">
-          <div class="card shadow-sm h-100">
-            <svg class="bd-placeholder-img card-img-top" viewBox="0 0 100 100" role="img"
-              preserveAspectRatio="xMidYMid meet" focusable="false">
-              <image href="img/team/aniruddh.jpeg" width="100%" height="100%">
-            </svg>
-            <div class="card-body">
-              <p class="card-text custom-font bold-font darkcolor"
-                style="font-size:160%;  padding-top: 10px !important;">Aniruddh Khanwale
-                (he/him/his)</p>
-              <p class="text-muted custom-font darkcolor medium-font">Materials Science
-                and
-                Engineering, EECS</p>
-              <div class="d-flex justify-content-between align-items-center card-bottom">
-                <small class="text-muted custom-font medium-font darkcolor">Class of
-                  2023</small>
-                <div class="btn-group">
-                  <button type="button" class="btn btn-outline-secondary" data-toggle="modal"
-                    data-target="#aniruddh-bio">About Me</button>
-                  <a href="https://rohp1.typeform.com/to/id22Y7" target="_blank"
-                    class="btn btn-outline-secondary" role="button">Contact Me</a>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="col">
-          <div class="card shadow-sm h-100">
-            <svg class="bd-placeholder-img card-img-top" viewBox="0 0 100 100" role="img"
-              preserveAspectRatio="xMidYMid meet" focusable="false">
-              <image href="img/team/austin.jpeg" width="100%" height="100%">
-            </svg>
-            <div class="card-body">
-              <p class="card-text custom-font bold-font darkcolor"
-                style="font-size:160%;  padding-top: 10px !important;">Austin Patel
-                (he/him/his)</p>
-              <p class="text-muted custom-font darkcolor medium-font">EECS</p>
-              <div class="d-flex justify-content-between align-items-center card-bottom">
-                <small class="text-muted custom-font medium-font darkcolor">Class of
-                  2023</small>
-                <div class="btn-group">
-                  <button type="button" class="btn btn-outline-secondary" data-toggle="modal"
-                    data-target="#austin-bio">About Me</button>
-                  <a href="https://rohp1.typeform.com/to/id22Y7" target="_blank"
-                    class="btn btn-outline-secondary" role="button">Contact Me</a>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="col">
-          <div class="card shadow-sm h-100">
-            <svg class="bd-placeholder-img card-img-top" viewBox="0 0 100 100" role="img"
-              preserveAspectRatio="xMidYMid meet" focusable="false">
-              <image href="img/team/owen.jpeg" width="100%" height="100%">
-            </svg>
-            <div class="card-body">
-              <p class="card-text custom-font bold-font darkcolor"
-                style="font-size:160%;  padding-top: 10px !important;">Owen Zuidema
-                (he/him/his)</p>
-              <p class="text-muted custom-font darkcolor medium-font">Environmental
-                Engineering Science</p>
-              <div class="d-flex justify-content-between align-items-center card-bottom">
-                <small class="text-muted custom-font medium-font darkcolor">Class of
-                  2023</small>
-                <div class="btn-group">
-                  <button type="button" class="btn btn-outline-secondary" data-toggle="modal"
-                    data-target="#owen-bio">About Me</button>
-                  <a href="https://rohp1.typeform.com/to/id22Y7" target="_blank"
-                    class="btn btn-outline-secondary" role="button">Contact Me</a>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="col">
-          <div class="card shadow-sm h-100">
-            <svg class="bd-placeholder-img card-img-top" viewBox="0 0 100 100" role="img"
-              preserveAspectRatio="xMidYMid meet" focusable="false">
-              <image href="img/team/marisa.jpeg" width="100%" height="100%">
-            </svg>
-            <div class="card-body">
-              <p class="card-text custom-font bold-font darkcolor"
-                style="font-size:160%;  padding-top: 10px !important;">Marisa Balades
-                (she/her/hers)</p>
-              <p class="text-muted custom-font darkcolor medium-font">Business
-                Administration
-              </p>
-              <div class="d-flex justify-content-between align-items-center card-bottom">
-                <small class="text-muted custom-font medium-font darkcolor">Class of
-                  2024</small>
-                <div class="btn-group">
-                  <button type="button" class="btn btn-outline-secondary" data-toggle="modal"
-                    data-target="#marisa-bio">About Me</button>
-                  <a href="https://rohp1.typeform.com/to/id22Y7" target="_blank"
-                    class="btn btn-outline-secondary" role="button">Contact Me</a>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="col">
-          <div class="card shadow-sm h-100">
-            <svg class="bd-placeholder-img card-img-top" viewBox="0 0 100 100" role="img"
-              preserveAspectRatio="xMidYMid meet" focusable="false">
-              <image href="img/team/avikam.jpeg" width="100%" height="100%">
-            </svg>
-            <div class="card-body">
-              <p class="card-text custom-font bold-font darkcolor"
-                style="font-size:160%;  padding-top: 10px !important;">Avikam Chauhan
-                (he/him/his)</p>
-              <p class="text-muted custom-font darkcolor medium-font">Computer Science</p>
-              <div class="d-flex justify-content-between align-items-center card-bottom">
-                <small class="text-muted custom-font medium-font darkcolor">Class of
-                  2024</small>
-                <div class="btn-group">
-                  <button type="button" class="btn btn-outline-secondary" data-toggle="modal"
-                    data-target="#avikam-bio">About Me</button>
-                  <a href="https://rohp1.typeform.com/to/id22Y7" target="_blank"
-                    class="btn btn-outline-secondary" role="button">Contact Me</a>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="col">
-          <div class="card shadow-sm h-100">
-            <svg class="bd-placeholder-img card-img-top" viewBox="0 0 100 100" role="img"
-              preserveAspectRatio="xMidYMid meet" focusable="false">
-              <image href="img/team/mark.jpeg" width="100%" height="100%">
-            </svg>
-            <div class="card-body">
-              <p class="card-text custom-font bold-font darkcolor"
-                style="font-size:160%;  padding-top: 10px !important;">Mark Gonzalez
-                (he/him/his)</p>
-              <p class="text-muted custom-font darkcolor medium-font">Computer Science</p>
-              <div class="d-flex justify-content-between align-items-center card-bottom">
-                <small class="text-muted custom-font medium-font darkcolor">Class of
-                  2024</small>
-                <div class="btn-group">
-                  <button type="button" class="btn btn-outline-secondary" data-toggle="modal"
-                    data-target="#mark-bio">About Me</button>
-                  <a href="https://rohp1.typeform.com/to/id22Y7" target="_blank"
-                    class="btn btn-outline-secondary" role="button">Contact Me</a>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="col">
-          <div class="card shadow-sm h-100">
-            <svg class="bd-placeholder-img card-img-top" viewBox="0 0 100 100" role="img"
-              preserveAspectRatio="xMidYMid meet" focusable="false">
-              <image href="img/team/ana.jpeg" width="100%" height="100%">
-            </svg>
-            <div class="card-body">
-              <p class="card-text custom-font bold-font darkcolor"
-                style="font-size:160%;  padding-top: 10px !important;">Ana Eva Jimenez
-                (she/her/hers)</p>
-              <p class="text-muted custom-font darkcolor medium-font">Ethnic Studies,
-                Legal
-                Studies</p>
-              <div class="d-flex justify-content-between align-items-center card-bottom">
-                <small class="text-muted custom-font medium-font darkcolor">Class of
-                  2024</small>
-                <div class="btn-group">
-                  <button type="button" class="btn btn-outline-secondary" data-toggle="modal"
-                    data-target="#ana-bio">About Me</button>
-                  <a href="https://rohp1.typeform.com/to/id22Y7" target="_blank"
-                    class="btn btn-outline-secondary" role="button">Contact Me</a>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="col">
-          <div class="card shadow-sm h-100">
-            <svg class="bd-placeholder-img card-img-top" viewBox="0 0 100 100" role="img"
-              preserveAspectRatio="xMidYMid meet" focusable="false">
-              <image href="img/team/esther.jpeg" width="100%" height="100%">
-            </svg>
-            <div class="card-body">
-              <p class="card-text custom-font bold-font darkcolor"
-                style="font-size:160%;  padding-top: 10px !important;">Esther Jung
-                (she/her/hers)</p>
-              <p class="text-muted custom-font darkcolor medium-font">Public Health</p>
-              <div class="d-flex justify-content-between align-items-center card-bottom">
-                <small class="text-muted custom-font medium-font darkcolor">Class of
-                  2024</small>
-                <div class="btn-group">
-                  <button type="button" class="btn btn-outline-secondary" data-toggle="modal"
-                    data-target="#esther-bio">About Me</button>
-                  <a href="https://rohp1.typeform.com/to/id22Y7" target="_blank"
-                    class="btn btn-outline-secondary" role="button">Contact Me</a>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="col">
-          <div class="card shadow-sm h-100">
-            <svg class="bd-placeholder-img card-img-top" viewBox="0 0 100 100" role="img"
-              preserveAspectRatio="xMidYMid meet" focusable="false">
-              <image href="img/team/jaimie.jpeg" width="100%" height="100%">
-            </svg>
-            <div class="card-body">
-              <p class="card-text custom-font bold-font darkcolor"
-                style="font-size:160%;  padding-top: 10px !important;">Jaimie Lee
-                (she/her/hers)</p>
-              <p class="text-muted custom-font darkcolor medium-font">Public Health,
-                Psychology</p>
-              <div class="d-flex justify-content-between align-items-center card-bottom">
-                <small class="text-muted custom-font medium-font darkcolor">Class of
-                  2024</small>
-                <div class="btn-group">
-                  <button type="button" class="btn btn-outline-secondary" data-toggle="modal"
-                    data-target="#jaimie-bio">About Me</button>
-                  <a href="https://rohp1.typeform.com/to/id22Y7" target="_blank"
-                    class="btn btn-outline-secondary" role="button">Contact Me</a>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="col">
-          <div class="card shadow-sm h-100">
-            <svg class="bd-placeholder-img card-img-top" viewBox="0 0 100 100" role="img"
-              preserveAspectRatio="xMidYMid meet" focusable="false">
-              <image href="img/team/osbaldo.jpeg" width="100%" height="100%">
-            </svg>
-            <div class="card-body">
-              <p class="card-text custom-font bold-font darkcolor"
-                style="font-size:160%;  padding-top: 10px !important;">Osbaldo Longoria
-                Nava
-                (he/him/his)
-              </p>
-              <p class="text-muted custom-font darkcolor medium-font">Sustainable
-                Environmental Design</p>
-              <div class="d-flex justify-content-between align-items-center card-bottom">
-                <small class="text-muted custom-font medium-font darkcolor">Class of
-                  2024</small>
-                <div class="btn-group">
-                  <button type="button" class="btn btn-outline-secondary" data-toggle="modal"
-                    data-target="#osbaldo-bio">About Me</button>
-                  <a href="https://rohp1.typeform.com/to/id22Y7" target="_blank"
-                    class="btn btn-outline-secondary" role="button">Contact Me</a>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="col">
-          <div class="card shadow-sm h-100">
-            <svg class="bd-placeholder-img card-img-top" viewBox="0 0 100 100" role="img"
-              preserveAspectRatio="xMidYMid meet" focusable="false">
-              <image href="img/team/denise.jpeg" width="100%" height="100%">
-            </svg>
-            <div class="card-body">
-              <p class="card-text custom-font bold-font darkcolor"
-                style="font-size:160%;  padding-top: 10px !important;">Denise Robles
-                (she/her/hers)</p>
-              <p class="text-muted custom-font darkcolor medium-font">Bioengineering</p>
-              <div class="d-flex justify-content-between align-items-center card-bottom">
-                <small class="text-muted custom-font medium-font darkcolor">Class of
-                  2024</small>
-                <div class="btn-group">
-                  <button type="button" class="btn btn-outline-secondary" data-toggle="modal"
-                    data-target="#denise-bio">About Me</button>
-                  <a href="https://rohp1.typeform.com/to/id22Y7" target="_blank"
-                    class="btn btn-outline-secondary" role="button">Contact Me</a>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="col">
-          <div class="card shadow-sm h-100">
-            <svg class="bd-placeholder-img card-img-top" viewBox="0 0 100 100" role="img"
-              preserveAspectRatio="xMidYMid meet" focusable="false">
-              <image href="img/team/shukri.jpeg" width="100%" height="100%">
-            </svg>
-            <div class="card-body">
-              <p class="card-text custom-font bold-font darkcolor"
-                style="font-size:160%;  padding-top: 10px !important;">Shukri Suhir
-                (he/him/his)</p>
-              <p class="text-muted custom-font darkcolor medium-font">Public Health,
-                Molecular
-                and Cell Biology</p>
-              <div class="d-flex justify-content-between align-items-center card-bottom">
-                <small class="text-muted custom-font medium-font darkcolor">Class of
-                  2024</small>
-                <div class="btn-group">
-                  <button type="button" class="btn btn-outline-secondary" data-toggle="modal"
-                    data-target="#shukri-bio">About Me</button>
-                  <a href="https://rohp1.typeform.com/to/id22Y7" target="_blank"
-                    class="btn btn-outline-secondary" role="button">Contact Me</a>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-  </div>
-  <!-- .row -->
-  <!-- /.container -->
-  </section>
+            <!-- .row -->
+            <!-- /.container -->
+        </section>
 
 
-  <!-- COMMITTEE BIOS -->
+<!-- COMMITTEE BIOS -->
 
-  <div class="modal" id="sarah-bio" tabindex="-1" role="dialog"
-    aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+<div class="modal" id="sarah-bio" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
     <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
       <div class="modal-content">
         <div class="modal-header">
-          <h5 class="modal-title custom-font bold-font darkcolor" style="font-size:160%;"
-            id="exampleModalLongTitle">Sarah Truong</h5>
+          <h5 class="modal-title custom-font bold-font darkcolor" style="font-size:160%;" id="exampleModalLongTitle">Sarah Truong</h5>
         </div>
         <div class="modal-body darkcolor medium-font">
-          Hey there!!! My name is Sarah Truong, and I am one of the coordinators leading ROHP this
-          year!
-          I am a fourth-year from Anaheim, CA studying Earth and Planetary Science, Data Science,
-          and
-          Computer Science! Other campus organizations that I'm a part of include the Computer
-          Science
-          Scholars Program, Association of Women in EE&CS, Society of Women in Physics, and the
-          Data
-          Science Scholars Program. In addition, I am the youngest undergraduate instructor for
-          the
-          award-wining course of over 900 students, Introduction to General Astronomy (Astro C10)!
-          I
-          am an undergraduate student researcher for two different research labs, one of which is
-          led
-          by Nobel laureate in Physics, Saul Perlmutter, at the Lawrence Berkeley National
-          Laboratory!
-          In my free time, I love to go on spontaneous trips with my friends, clown around, listen
-          to
-          the "Binge Mode" podcast, watch the sunset at the beach, go stargazing, curate Spotify
-          playlists,
-          watch NBA basketball games, and interior design my friends' apartments! I love meeting
-          potential
-          Berkeley students, so feel free to reach out to me with any questions!
+            Hey there!!! My name is Sarah Truong, and I am one of the coordinators leading ROHP this year! 
+    I am a fourth-year from Anaheim, CA studying Earth and Planetary Science, Data Science, and 
+    Computer Science! Other campus organizations that I'm a part of include the Computer Science 
+    Scholars Program, Association of Women in EE&CS, Society of Women in Physics, and the Data 
+    Science Scholars Program. In addition, I am the youngest undergraduate instructor for the 
+    award-wining course of over 900 students, Introduction to General Astronomy (Astro C10)! I 
+    am an undergraduate student researcher for two different research labs, one of which is led 
+    by Nobel laureate in Physics, Saul Perlmutter, at the Lawrence Berkeley National Laboratory! 
+    In my free time, I love to go on spontaneous trips with my friends, clown around, listen to 
+    the "Binge Mode" podcast, watch the sunset at the beach, go stargazing, curate Spotify playlists, 
+    watch NBA basketball games, and interior design my friends' apartments! I love meeting potential 
+    Berkeley students, so feel free to reach out to me with any questions!
         </div>
         <div class="modal-footer">
-          <button type="button" class="btn btn-outline-secondary"
-            data-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-outline-secondary" data-dismiss="modal">Close</button>
         </div>
       </div>
     </div>
   </div>
 
-  <div class="modal" id="matthew-bio" tabindex="-1" role="dialog"
-    aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+  <div class="modal" id="matthew-bio" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
     <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
       <div class="modal-content">
         <div class="modal-header">
-          <h5 class="modal-title custom-font bold-font darkcolor" style="font-size:160%;"
-            id="exampleModalLongTitle">Matthew Clark</h5>
+          <h5 class="modal-title custom-font bold-font darkcolor" style="font-size:160%;" id="exampleModalLongTitle">Matthew Clark</h5>
         </div>
         <div class="modal-body darkcolor medium-font">
-          Hey y'all! My name is Matt and I am one of the ROHP coordinators! I am a third year
-          studying
-          Molecular and Cell Biology with an emphasis in Immunology and Pathogenesis with a minor
-          in
-          French. On campus, I serve as one of the co-vice presidents for the United Nations
-          Association of Berkeley, an undergraduate researcher in the integrative biology
-          department,
-          and a member of the Vice Chancellor's Student Advisory Council. I am also an
-          undergraduate
-          learning mentor in the integrative biology department, where I help teach a lab section
-          in
-          introductory biology. In my spare time, I love watching sketch comedy and stand-up
-          comedy,
-          playing video games, and reading ancient literature. Feel free to ask me any questions
-          about
-          research, RCSA, welcoming events, or just student life in general at Berkeley! ROHP has
-          been
-          my most meaningful community here at Cal: I hope we can help you decide if Cal is the
-          place
-          for you!
+            Hey y'all! My name is Matt and I am one of the ROHP coordinators! I am a third year studying
+            Molecular and Cell Biology with an emphasis in Immunology and Pathogenesis with a minor in
+            French. On campus, I serve as one of the co-vice presidents for the United Nations
+            Association of Berkeley, an undergraduate researcher in the integrative biology department,
+            and a member of the Vice Chancellor's Student Advisory Council. I am also an undergraduate
+            learning mentor in the integrative biology department, where I help teach a lab section in
+            introductory biology. In my spare time, I love watching sketch comedy and stand-up comedy,
+            playing video games, and reading ancient literature. Feel free to ask me any questions about
+            research, RCSA, welcoming events, or just student life in general at Berkeley! ROHP has been
+            my most meaningful community here at Cal: I hope we can help you decide if Cal is the place
+            for you!
         </div>
         <div class="modal-footer">
-          <button type="button" class="btn btn-outline-secondary"
-            data-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-outline-secondary" data-dismiss="modal">Close</button>
         </div>
       </div>
     </div>
   </div>
 
-  <div class="modal" id="dom-bio" tabindex="-1" role="dialog"
-    aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+  <div class="modal" id="dom-bio" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
     <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
       <div class="modal-content">
         <div class="modal-header">
-          <h5 class="modal-title custom-font bold-font darkcolor" style="font-size:160%;"
-            id="exampleModalLongTitle">Dom Gutierrez</h5>
+          <h5 class="modal-title custom-font bold-font darkcolor" style="font-size:160%;" id="exampleModalLongTitle">Dom Gutierrez</h5>
         </div>
         <div class="modal-body darkcolor medium-font">
-          Hello! My name is Dominic Gutierrez and I am a junior studying History and Chicana/o
-          Studies. I’m from San Bernardino, California and I’m so excited to be one of your ROHP
-          Coordinators! On campus, I work at the Lawrence Hall of Science and am an intern for the
-          Latinx Pre-Law Society. Additionally, I’m currently working at a pet store in my
-          hometown
-          and I really enjoyed studying abroad in Peru back in Summer 2019. In my freshman year, I
-          was
-          an intern for the Berkeley City Auditor and worked for her campaign. In the future, I’m
-          interested in working in law, education, or with animals in some capacity. Please feel
-          free
-          to reach out if you have any questions about Cal, the scholarship, or anything else!
+            Hello! My name is Dominic Gutierrez and I am a junior studying History and Chicana/o
+            Studies. I’m from San Bernardino, California and I’m so excited to be one of your ROHP
+            Coordinators! On campus, I work at the Lawrence Hall of Science and am an intern for the
+            Latinx Pre-Law Society. Additionally, I’m currently working at a pet store in my hometown
+            and I really enjoyed studying abroad in Peru back in Summer 2019. In my freshman year, I was
+            an intern for the Berkeley City Auditor and worked for her campaign. In the future, I’m
+            interested in working in law, education, or with animals in some capacity. Please feel free
+            to reach out if you have any questions about Cal, the scholarship, or anything else!
         </div>
         <div class="modal-footer">
-          <button type="button" class="btn btn-outline-secondary"
-            data-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-outline-secondary" data-dismiss="modal">Close</button>
         </div>
       </div>
     </div>
   </div>
-
-  <div class="modal" id="shantanu-bio" tabindex="-1" role="dialog"
-    aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+  
+  <div class="modal" id="shantanu-bio" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
     <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
       <div class="modal-content">
         <div class="modal-header">
-          <h5 class="modal-title custom-font bold-font darkcolor" style="font-size:160%;"
-            id="exampleModalLongTitle">Shantanu Kadam</h5>
+          <h5 class="modal-title custom-font bold-font darkcolor" style="font-size:160%;" id="exampleModalLongTitle">Shantanu Kadam</h5>
         </div>
         <div class="modal-body darkcolor medium-font">
-          Hey there! I'm a physics major who also appreciates math (I know you didn't see that
-          coming)
-          and cares about the environment. When I'm not at the chalkboard, you can find me swing
-          dancing,
-          cooking, daydreaming about Siberian Huskies, exploring Berkeley for vegan treats,
-          perpetually
-          drinking tea, reading, and (most importantly!) sleeping. Home sweet home is back in
-          Alabama,
-          so if you have any concerns about being far from home, please share them with me! ROHP
-          led to
-          my first friendships at Cal, and I can't wait to share this Cal-tastic experience with
-          you :)
-          Please reach out if you'd like to talk about Physics, Math, EEP (Environmental &
-          Economic Policy),
-          succeeding in physics, getting research, going out-of-state for college, being vegan in
-          Berkeley,
-          deCals, 7-breadth requirements, Society of Physics Students, RCSA, ROHP, the benefits of
-          being a
-          Regents' Scholar, planning your first semester, on-campus housing, concerns about
-          Berkeley.
+            Hey there! I'm a physics major who also appreciates math (I know you didn't see that coming)
+            and cares about the environment. When I'm not at the chalkboard, you can find me swing dancing,
+             cooking, daydreaming about Siberian Huskies, exploring Berkeley for vegan treats, perpetually 
+             drinking tea, reading, and (most importantly!) sleeping. Home sweet home is back in Alabama, 
+             so if you have any concerns about being far from home, please share them with me! ROHP led to 
+             my first friendships at Cal, and I can't wait to share this Cal-tastic experience with you :) 
+             Please reach out if you'd like to talk about Physics, Math, EEP (Environmental & Economic Policy), 
+             succeeding in physics, getting research, going out-of-state for college, being vegan in Berkeley, 
+             deCals, 7-breadth requirements, Society of Physics Students, RCSA, ROHP, the benefits of being a 
+             Regents' Scholar, planning your first semester, on-campus housing, concerns about Berkeley. 
         </div>
         <div class="modal-footer">
-          <button type="button" class="btn btn-outline-secondary"
-            data-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-outline-secondary" data-dismiss="modal">Close</button>
         </div>
       </div>
     </div>
   </div>
 
-  <div class="modal" id="angelina-bio" tabindex="-1" role="dialog"
-    aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+  <div class="modal" id="angelina-bio" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
     <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
       <div class="modal-content">
         <div class="modal-header">
-          <h5 class="modal-title custom-font bold-font darkcolor" style="font-size:160%;"
-            id="exampleModalLongTitle">Ya Chi Angelina Liang</h5>
+          <h5 class="modal-title custom-font bold-font darkcolor" style="font-size:160%;" id="exampleModalLongTitle">Ya Chi Angelina Liang</h5>
         </div>
         <div class="modal-body darkcolor medium-font">
-          Hello!! I'm Angelina (she/her) and I'm a third year from Los Angeles, CA studying
-          Psychology
-          and Molecular Cell Biology with an emphasis in Immunology and Pathogenesis. On campus, I
-          work
-          with industry and community partners to develop solutions for public health challenges
-          through
-          the Fung Fellowship, guide and support high school students in navigating the college
-          application
-          process as an Advising Fellow with Matriculate, and serve as a Financial Literacy
-          Program Intern
-          at the Berkeley/Oakland YWCA chapter, a non-profit organization dedicated to eliminating
-          racism
-          and providing free informational programming and resources for community building. In my
-          free time,
-          I enjoy painting, creating super specific Spotify playlists, and refining my skincare
-          routine.
-          Feel free to reach out with any questions at all!
+            Hello!! I'm Angelina (she/her) and I'm a third year from Los Angeles, CA studying Psychology 
+            and Molecular Cell Biology with an emphasis in Immunology and Pathogenesis. On campus, I work 
+            with industry and community partners to develop solutions for public health challenges through 
+            the Fung Fellowship, guide and support high school students in navigating the college application 
+            process as an Advising Fellow with Matriculate, and serve as a Financial Literacy Program Intern 
+            at the Berkeley/Oakland YWCA chapter, a non-profit organization dedicated to eliminating racism 
+            and providing free informational programming and resources for community building. In my free time, 
+            I enjoy painting, creating super specific Spotify playlists, and refining my skincare routine. 
+            Feel free to reach out with any questions at all!
         </div>
         <div class="modal-footer">
-          <button type="button" class="btn btn-outline-secondary"
-            data-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-outline-secondary" data-dismiss="modal">Close</button>
         </div>
       </div>
     </div>
   </div>
 
-  <div class="modal" id="kat-bio" tabindex="-1" role="dialog"
-    aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+  <div class="modal" id="kat-bio" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
     <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
       <div class="modal-content">
         <div class="modal-header">
-          <h5 class="modal-title custom-font bold-font darkcolor" style="font-size:160%;"
-            id="exampleModalLongTitle">Kat Bako</h5>
+          <h5 class="modal-title custom-font bold-font darkcolor" style="font-size:160%;" id="exampleModalLongTitle">Kat Bako</h5>
         </div>
         <div class="modal-body darkcolor medium-font">
-          Hey future Golden Bears! I'm Kat, a second year from Clovis, California, studying
-          Molecular Environmental
-          Biology. On campus, I'm involved in Foresight (Cal's pre-optometry club), Koinonia
-          Fellowship, and opto
-          research through URAP. On any given day, you might find me walking to Trader Joes to buy
-          all their peanut
-          butter snacks, hanging out with friends in Bowles Hall, playing Bananagrams, or planning
-          roadtrips around
-          California. Ask me questions about anything from being pre-health, favorite musicals,
-          why I chose Cal, or
-          where to eat in Berkeley! I can't wait to meet you all!
+            Hey future Golden Bears! I'm Kat, a second year from Clovis, California, studying Molecular Environmental
+            Biology. On campus, I'm involved in Foresight (Cal's pre-optometry club), Koinonia Fellowship, and opto
+            research through URAP. On any given day, you might find me walking to Trader Joes to buy all their peanut
+            butter snacks, hanging out with friends in Bowles Hall, playing Bananagrams, or planning roadtrips around
+            California. Ask me questions about anything from being pre-health, favorite musicals, why I chose Cal, or
+            where to eat in Berkeley! I can't wait to meet you all!
         </div>
         <div class="modal-footer">
-          <button type="button" class="btn btn-outline-secondary"
-            data-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-outline-secondary" data-dismiss="modal">Close</button>
         </div>
       </div>
     </div>
   </div>
 
-  <div class="modal" id="marie-bio" tabindex="-1" role="dialog"
-    aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+  <div class="modal" id="marie-bio" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
     <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
       <div class="modal-content">
         <div class="modal-header">
-          <h5 class="modal-title custom-font bold-font darkcolor" style="font-size:160%;"
-            id="exampleModalLongTitle">Marie Bellevue</h5>
+          <h5 class="modal-title custom-font bold-font darkcolor" style="font-size:160%;" id="exampleModalLongTitle">Marie Bellevue</h5>
         </div>
         <div class="modal-body darkcolor medium-font">
-          Hi, I’m Marie! I am a first year intended Media Studies and Psychology major from San
-          Diego County.
-          Despite my time in SoCal, my original roots are in NorCal as I was born in Berkeley and
-          spent most of
-          my childhood here. I am currently involved in ROHP, am the Chief Print Editor for
-          Caliber Magazine. I
-          also spend much of my time with my horse, Ray, at Sunset Ridge Equestrian Center or with
-          my lovely friends.
-          I went to a high school with no knowledge of what the Regents’ and Chancellor's
-          Scholarship was and have
-          extensive experience not believing that I deserved the scholarship, so if anyone feels
-          as though they are
-          in the same boat as I was or has any questions, feel free to reach out.
+            Hi, I’m Marie! I am a first year intended Media Studies and Psychology major from San Diego County. 
+            Despite my time in SoCal, my original roots are in NorCal as I was born in Berkeley and spent most of 
+            my childhood here. I am currently involved in ROHP, am the Chief Print Editor for Caliber Magazine. I 
+            also spend much of my time with my horse, Ray, at Sunset Ridge Equestrian Center or with my lovely friends. 
+            I went to a high school with no knowledge of what the Regents’ and Chancellor's Scholarship was and have 
+            extensive experience not believing that I deserved the scholarship, so if anyone feels as though they are 
+            in the same boat as I was or has any questions, feel free to reach out.
         </div>
         <div class="modal-footer">
-          <button type="button" class="btn btn-outline-secondary"
-            data-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-outline-secondary" data-dismiss="modal">Close</button>
         </div>
       </div>
     </div>
   </div>
 
-  <div class="modal" id="aniruddh-bio" tabindex="-1" role="dialog"
-    aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+  <div class="modal" id="aniruddh-bio" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
     <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
       <div class="modal-content">
         <div class="modal-header">
-          <h5 class="modal-title custom-font bold-font darkcolor" style="font-size:160%;"
-            id="exampleModalLongTitle">Aniruddh Khanwale</h5>
+          <h5 class="modal-title custom-font bold-font darkcolor" style="font-size:160%;" id="exampleModalLongTitle">Aniruddh Khanwale</h5>
         </div>
         <div class="modal-body darkcolor medium-font">
-          Hello everyone! My name is Aniruddh Khanwale, and I'm a second year, originally from San
-          Diego. I am double majoring in Materials Science/Engineering and EECS. In addition to
-          ROHP,
-          I am the Corporate Relations Chair for the MSE Student Association, and I serve on EECS
-          16A
-          (Circuits/Linear Algebra) course staff. I also recently started doing research in
-          computational materials science, and unlike most people, I didn't follow a particularly
-          traditional path to get it. In my free time (what little of it I have), I like to
-          workshop/redesign my very colorful four year plan, learn new languages (currently
-          working on
-          German & Esperanto), and take naps. ROHP was one of the main reasons I elected to come
-          to
-          Cal, and I'd love to talk to you more about my experience at Cal! Go Bears!
+            Hello everyone! My name is Aniruddh Khanwale, and I'm a second year, originally from San
+            Diego. I am double majoring in Materials Science/Engineering and EECS. In addition to ROHP,
+            I am the Corporate Relations Chair for the MSE Student Association, and I serve on EECS 16A
+            (Circuits/Linear Algebra) course staff. I also recently started doing research in
+            computational materials science, and unlike most people, I didn't follow a particularly
+            traditional path to get it. In my free time (what little of it I have), I like to
+            workshop/redesign my very colorful four year plan, learn new languages (currently working on
+            German & Esperanto), and take naps. ROHP was one of the main reasons I elected to come to
+            Cal, and I'd love to talk to you more about my experience at Cal! Go Bears!
         </div>
         <div class="modal-footer">
-          <button type="button" class="btn btn-outline-secondary"
-            data-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-outline-secondary" data-dismiss="modal">Close</button>
         </div>
       </div>
     </div>
   </div>
 
-  <div class="modal" id="austin-bio" tabindex="-1" role="dialog"
-    aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+  <div class="modal" id="austin-bio" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
     <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
       <div class="modal-content">
         <div class="modal-header">
-          <h5 class="modal-title custom-font bold-font darkcolor" style="font-size:160%;"
-            id="exampleModalLongTitle">Austin Patel</h5>
+          <h5 class="modal-title custom-font bold-font darkcolor" style="font-size:160%;" id="exampleModalLongTitle">Austin Patel</h5>
         </div>
         <div class="modal-body darkcolor medium-font">
-          Hi everyone! My name is Austin Patel, and I am a second year studying electrical
-          engineering
-          and computer science. On campus I am involved with undergraduate research so feel free
-          to
-          ask me any questions about that! Before coming to Berkeley I lived in Marin County,
-          which is
-          also in the Bay Area, so I can tell you a lot of fun things to do throughout the Bay
-          Area.
-          In my free time I enjoy running and doing pretty much anything with my friends whether
-          that's swimming, watching the sunset, or playing Smash. My favorite artists are Khalid
-          and
-          Vance Joy, but I listen to a ton of other music as well. I also love baking, and I make
-          some
-          really good chocolate chip cookies. I had an amazing experience during my ROHP, and I
-          hope
-          you all will too!
+            Hi everyone! My name is Austin Patel, and I am a second year studying electrical engineering
+            and computer science. On campus I am involved with undergraduate research so feel free to
+            ask me any questions about that! Before coming to Berkeley I lived in Marin County, which is
+            also in the Bay Area, so I can tell you a lot of fun things to do throughout the Bay Area.
+            In my free time I enjoy running and doing pretty much anything with my friends whether
+            that's swimming, watching the sunset, or playing Smash. My favorite artists are Khalid and
+            Vance Joy, but I listen to a ton of other music as well. I also love baking, and I make some
+            really good chocolate chip cookies. I had an amazing experience during my ROHP, and I hope
+            you all will too!
         </div>
         <div class="modal-footer">
-          <button type="button" class="btn btn-outline-secondary"
-            data-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-outline-secondary" data-dismiss="modal">Close</button>
         </div>
       </div>
     </div>
   </div>
 
-  <div class="modal" id="owen-bio" tabindex="-1" role="dialog"
-    aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+  <div class="modal" id="owen-bio" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
     <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
       <div class="modal-content">
         <div class="modal-header">
-          <h5 class="modal-title custom-font bold-font darkcolor" style="font-size:160%;"
-            id="exampleModalLongTitle">Owen Zuidema</h5>
+          <h5 class="modal-title custom-font bold-font darkcolor" style="font-size:160%;" id="exampleModalLongTitle">Owen Zuidema</h5>
         </div>
         <div class="modal-body darkcolor medium-font">
-          Hi! My name is Owen and I'm a second year from Napa, California studying Environmental
-          Engineering Science with a minor in Sustainable Design. Outside of class and ROHP, I'm
-          on
-          the Cal Construction competition team, a player on our men's club ultimate frisbee team,
-          a
-          GBO Leader, a student instructor for E98 (a DeCal!), and a member of Cal Hiking And
-          Outdoors
-          Society (CHAOS). I love hiking and running, doing art, watching an unhealthy amount of
-          YouTube, "doing homework" with friends on Zoom, making terrible dad jokes, and visiting
-          Berkeley! Please reach out if you want to talk about anything at all: engineering at
-          Berkeley, Cal sports and clubs, the artistic and cultural significance of Shrek 2, or
-          anything else you can think of! Go bears :)
+            Hi! My name is Owen and I'm a second year from Napa, California studying Environmental
+            Engineering Science with a minor in Sustainable Design. Outside of class and ROHP, I'm on
+            the Cal Construction competition team, a player on our men's club ultimate frisbee team, a
+            GBO Leader, a student instructor for E98 (a DeCal!), and a member of Cal Hiking And Outdoors
+            Society (CHAOS). I love hiking and running, doing art, watching an unhealthy amount of
+            YouTube, "doing homework" with friends on Zoom, making terrible dad jokes, and visiting
+            Berkeley! Please reach out if you want to talk about anything at all: engineering at
+            Berkeley, Cal sports and clubs, the artistic and cultural significance of Shrek 2, or
+            anything else you can think of! Go bears :)
         </div>
         <div class="modal-footer">
-          <button type="button" class="btn btn-outline-secondary"
-            data-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-outline-secondary" data-dismiss="modal">Close</button>
         </div>
       </div>
     </div>
   </div>
 
-  <div class="modal" id="marisa-bio" tabindex="-1" role="dialog"
-    aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+  <div class="modal" id="marisa-bio" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
     <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
       <div class="modal-content">
         <div class="modal-header">
-          <h5 class="modal-title custom-font bold-font darkcolor" style="font-size:160%;"
-            id="exampleModalLongTitle">Marisa Balades</h5>
+          <h5 class="modal-title custom-font bold-font darkcolor" style="font-size:160%;" id="exampleModalLongTitle">Marisa Balades</h5>
         </div>
         <div class="modal-body darkcolor medium-font">
-          Hi everyone!! My name is Marisa Balades, and I'm currently residing in Vallejo, CA!
-          I'm a first-year majoring in Business Administration under the Global Management Program
-          and am also pursuing a minor in Global Poverty & Practice. At Cal, I'm involved with
-          organizations such as HUBBA, BCEC, ASUC, and, of course, ROHP (though I can't wait to
-          explore other creative, random clubs after quarantine as well!) In my free time, I enjoy
-          reading, writing, picnic dates with friends, yoga, painting, playing tennis, and
-          listening
-          to true crime podcasts. Can't wait to meet you all! Go bears!!!
+            Hi everyone!! My name is Marisa Balades, and I'm currently residing in Vallejo, CA! 
+            I'm a first-year majoring in Business Administration under the Global Management Program
+             and am also pursuing a minor in Global Poverty & Practice. At Cal, I'm involved with 
+             organizations such as HUBBA, BCEC, ASUC, and, of course, ROHP (though I can't wait to 
+             explore other creative, random clubs after quarantine as well!) In my free time, I enjoy 
+             reading, writing, picnic dates with friends, yoga, painting, playing tennis, and listening 
+             to true crime podcasts. Can't wait to meet you all! Go bears!!!
         </div>
         <div class="modal-footer">
-          <button type="button" class="btn btn-outline-secondary"
-            data-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-outline-secondary" data-dismiss="modal">Close</button>
         </div>
       </div>
     </div>
   </div>
 
-  <div class="modal" id="avikam-bio" tabindex="-1" role="dialog"
-    aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+  <div class="modal" id="avikam-bio" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
     <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
       <div class="modal-content">
         <div class="modal-header">
-          <h5 class="modal-title custom-font bold-font darkcolor" style="font-size:160%;"
-            id="exampleModalLongTitle">Avikam Chauhan</h5>
+          <h5 class="modal-title custom-font bold-font darkcolor" style="font-size:160%;" id="exampleModalLongTitle">Avikam Chauhan</h5>
         </div>
         <div class="modal-body darkcolor medium-font">
-          Hello! My name is Avikam Chauhan and I'm a first-year studying computer science. I've
-          been
-          in the Bay Area for most of my life, so I can share many fun places to visit nearby! I
-          enjoy
-          competing in hackathons, and designing and programming robots! In my free time, I like
-          to swim,
-          ski, and play video games. I also really enjoy watching action, sci-fi, and mystery
-          movies and
-          TV shows. I had an awesome experience at ROHP, and I hope you all have just as much fun
-          as I did!
-          Definitely reach out to me if you have any questions about Berkeley, the Regents' and
-          Chancellor's
-          Scholarship, RCSA, ROHP, or anything in general! Go Bears!
+            Hello! My name is Avikam Chauhan and I'm a first-year studying computer science. I've been 
+            in the Bay Area for most of my life, so I can share many fun places to visit nearby! I enjoy 
+            competing in hackathons, and designing and programming robots! In my free time, I like to swim,
+            ski, and play video games. I also really enjoy watching action, sci-fi, and mystery movies and
+            TV shows. I had an awesome experience at ROHP, and I hope you all have just as much fun as I did! 
+            Definitely reach out to me if you have any questions about Berkeley, the Regents' and Chancellor's
+            Scholarship, RCSA, ROHP, or anything in general! Go Bears!
         </div>
         <div class="modal-footer">
-          <button type="button" class="btn btn-outline-secondary"
-            data-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-outline-secondary" data-dismiss="modal">Close</button>
         </div>
       </div>
     </div>
   </div>
 
-  <div class="modal" id="mark-bio" tabindex="-1" role="dialog"
-    aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+  <div class="modal" id="mark-bio" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
     <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
       <div class="modal-content">
         <div class="modal-header">
-          <h5 class="modal-title custom-font bold-font darkcolor" style="font-size:160%;"
-            id="exampleModalLongTitle">Mark Gonzalez</h5>
+          <h5 class="modal-title custom-font bold-font darkcolor" style="font-size:160%;" id="exampleModalLongTitle">Mark Gonzalez</h5>
         </div>
         <div class="modal-body darkcolor medium-font">
-          BOO!! hehe.. did I scare you:} As you could probably tell, my name is Mark Gonzalez.
-          I am a first year student from Whittier, California intending to major in computer
-          science and
-          possibly double major/ minor in data science, some kind of planetary science or
-          environmental science!!
-          In my free time, I enjoy climbing(indoors or outdoors), analyzing/trading in the stock
-          market, exploring
-          Berkeley with my buds, biking and brewing coffee:) If you're wondering how I'm liking
-          Berkeley as
-          a first year, I LOVE IT HERE, ITS SO COOL!! The people: amazing. The food: immaculate.
-          The vibes: superb.
-          Anyway, can't wait to meet ya'll:)
+            BOO!! hehe.. did I scare you:} As you could probably tell, my name is Mark Gonzalez.
+            I am a first year student from Whittier, California intending to major in computer science and
+            possibly double major/ minor in data science, some kind of planetary science or environmental science!!
+            In my free time, I enjoy climbing(indoors or outdoors), analyzing/trading in the stock market, exploring
+            Berkeley with my buds, biking and brewing coffee:) If you're wondering how I'm liking Berkeley as
+            a first year, I LOVE IT HERE, ITS SO COOL!! The people: amazing. The food: immaculate. The vibes: superb.
+            Anyway, can't wait to meet ya'll:)
         </div>
         <div class="modal-footer">
-          <button type="button" class="btn btn-outline-secondary"
-            data-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-outline-secondary" data-dismiss="modal">Close</button>
         </div>
       </div>
     </div>
   </div>
 
-  <div class="modal" id="ana-bio" tabindex="-1" role="dialog"
-    aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+  <div class="modal" id="ana-bio" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
     <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
       <div class="modal-content">
         <div class="modal-header">
-          <h5 class="modal-title custom-font bold-font darkcolor" style="font-size:160%;"
-            id="exampleModalLongTitle">Ana Eva Jimenez</h5>
+          <h5 class="modal-title custom-font bold-font darkcolor" style="font-size:160%;" id="exampleModalLongTitle">Ana Eva Jimenez</h5>
         </div>
         <div class="modal-body darkcolor medium-font">
-          Hey!! My name is Ana Eva Jimenez, I am a Ethnic Studies and Legal Studies major. I use
-          she/her/ella pronouns
-          and I am a first generation, low income student. I am a part of Raices, RHA, Blackwell
-          HA, Matriculate and of course
-          ROHP! I am from Modesto, CA, I enjoy being outdoors, listening to music, watching cute
-          videos of dogs, and playing
-          animal crossing. I know what it is like to be told that you shouldn't try to achieve
-          your dreams, and I'm here to
-          tell you they are WRONG. You are capable of ANYTHING. Please feel free to reach out to
-          me if you have any questions/ support!
+            Hey!! My name is Ana Eva Jimenez, I am a Ethnic Studies and Legal Studies major. I use she/her/ella pronouns
+            and I am a first generation, low income student. I am a part of Raices, RHA, Blackwell HA, Matriculate and of course
+            ROHP! I am from Modesto, CA, I enjoy being outdoors, listening to music, watching cute videos of dogs, and playing
+            animal crossing. I know what it is like to be told that you shouldn't try to achieve your dreams, and I'm here to
+            tell you they are WRONG. You are capable of ANYTHING. Please feel free to reach out to me if you have any questions/ support!
         </div>
         <div class="modal-footer">
-          <button type="button" class="btn btn-outline-secondary"
-            data-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-outline-secondary" data-dismiss="modal">Close</button>
         </div>
       </div>
     </div>
   </div>
 
-  <div class="modal" id="esther-bio" tabindex="-1" role="dialog"
-    aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+  <div class="modal" id="esther-bio" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
     <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
       <div class="modal-content">
         <div class="modal-header">
-          <h5 class="modal-title custom-font bold-font darkcolor" style="font-size:160%;"
-            id="exampleModalLongTitle">Esther Jung</h5>
+          <h5 class="modal-title custom-font bold-font darkcolor" style="font-size:160%;" id="exampleModalLongTitle">Esther Jung</h5>
         </div>
         <div class="modal-body darkcolor medium-font">
-          Hello! My name is Esther and I am a first year intended Public Health major on the
-          pre-medical track.
-          I grew up in San Diego, California, but I have lived in 3 other U.S. time zones! Besides
-          ROHP, I am
-          involved in URAP as a clinical student intern at the UCSF Medical Center and its
-          on-campus Patient
-          Advocacy Support Group. I am also part of the ASUC, Cal's student government, as the
-          Tang Health Center
-          Advocacy Associate, and CARE, a volunteer organization that combines my passions of
-          music and medicine.
-          I love playing in orchestra, going to the gym, baking cookies, The Office, teaching, and
-          everything Trader
-          Joe's! I am super open to conversing about my experience choosing UC Berkeley,
-          navigating online/pre-med
-          courses here, and any other questions or passions you want to pursue. Excited to meet
-          you all, Go Bears!
+            Hello! My name is Esther and I am a first year intended Public Health major on the pre-medical track. 
+            I grew up in San Diego, California, but I have lived in 3 other U.S. time zones! Besides ROHP, I am 
+            involved in URAP as a clinical student intern at the UCSF Medical Center and its on-campus Patient 
+            Advocacy Support Group. I am also part of the ASUC, Cal's student government, as the Tang Health Center 
+            Advocacy Associate, and CARE, a volunteer organization that combines my passions of music and medicine. 
+            I love playing in orchestra, going to the gym, baking cookies, The Office, teaching, and everything Trader 
+            Joe's! I am super open to conversing about my experience choosing UC Berkeley, navigating online/pre-med 
+            courses here, and any other questions or passions you want to pursue. Excited to meet you all, Go Bears!
         </div>
         <div class="modal-footer">
-          <button type="button" class="btn btn-outline-secondary"
-            data-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-outline-secondary" data-dismiss="modal">Close</button>
         </div>
       </div>
     </div>
   </div>
 
-  <div class="modal" id="jaimie-bio" tabindex="-1" role="dialog"
-    aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+  <div class="modal" id="jaimie-bio" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
     <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
       <div class="modal-content">
         <div class="modal-header">
-          <h5 class="modal-title custom-font bold-font darkcolor" style="font-size:160%;"
-            id="exampleModalLongTitle">Jaimie Lee</h5>
+          <h5 class="modal-title custom-font bold-font darkcolor" style="font-size:160%;" id="exampleModalLongTitle">Jaimie Lee</h5>
         </div>
         <div class="modal-body darkcolor medium-font">
-          Heyo! I’m Jaimie and I’m from Los Angeles, California. I am a first year on the pre-med
-          track,
-          intending to study Public Health, Psychology, and Public Policy because of my interest
-          in social
-          justice and health equity within medicine. I am currently a part of the Pilipino
-          Association for
-          Health Careers, Partners in Health Engage at Berkeley, and Phalanx Pre-Medical
-          Consulting. In
-          my free time, I enjoy running (I’ve ran three marathons before), thrifting (I own a
-          resale business),
-          trying new restaurants, rewatching The Office, listening to indie pop, and playing
-          League of Legends.
-          Feel free to reach out to me anytime (except the mornings because I’m probably still
-          sleeping in)
-          if you have any questions!
+            Heyo! I’m Jaimie and I’m from Los Angeles, California. I am a first year on the pre-med track,
+            intending to study Public Health, Psychology, and Public Policy because of my interest in social
+            justice and health equity within medicine. I am currently a part of the Pilipino Association for
+            Health Careers, Partners in Health Engage at Berkeley, and Phalanx Pre-Medical Consulting. In
+            my free time, I enjoy running (I’ve ran three marathons before), thrifting (I own a resale business),
+            trying new restaurants, rewatching The Office, listening to indie pop, and playing League of Legends.
+            Feel free to reach out to me anytime (except the mornings because I’m probably still sleeping in)
+            if you have any questions!
         </div>
         <div class="modal-footer">
-          <button type="button" class="btn btn-outline-secondary"
-            data-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-outline-secondary" data-dismiss="modal">Close</button>
         </div>
       </div>
     </div>
   </div>
 
-  <div class="modal" id="osbaldo-bio" tabindex="-1" role="dialog"
-    aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+  <div class="modal" id="osbaldo-bio" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
     <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
       <div class="modal-content">
         <div class="modal-header">
-          <h5 class="modal-title custom-font bold-font darkcolor" style="font-size:160%;"
-            id="exampleModalLongTitle">Osbaldo Longoria Nava</h5>
+          <h5 class="modal-title custom-font bold-font darkcolor" style="font-size:160%;" id="exampleModalLongTitle">Osbaldo Longoria Nava</h5>
         </div>
         <div class="modal-body darkcolor medium-font">
-          Hey Folks! You can call me Osbaldo, baldo, ozzy, Oz or anything. I have been living in
-          the
-          Bay Area my whole life and am from a small town known as Union City. I am a first-year
-          studying Sustainable Environmental Design and Economics. I am very interested in
-          building
-          and designing a more sustainable and environmentally friendly future where everyone can
-          co-exist. I enjoy exploring random places with friends and trying new foods that look
-          cool
-          and taste even better. Arts and crafts is where its at for me as well, embroidering and
-          sewing are some of my hobbies. You can also catch me running because deep down I'm still
-          an
-          XC runner and also an ASB kid at heart. I hope to connect with y'all!
+            Hey Folks! You can call me Osbaldo, baldo, ozzy, Oz or anything. I have been living in the
+            Bay Area my whole life and am from a small town known as Union City. I am a first-year
+            studying Sustainable Environmental Design and Economics. I am very interested in building
+            and designing a more sustainable and environmentally friendly future where everyone can
+            co-exist. I enjoy exploring random places with friends and trying new foods that look cool
+            and taste even better. Arts and crafts is where its at for me as well, embroidering and
+            sewing are some of my hobbies. You can also catch me running because deep down I'm still an
+            XC runner and also an ASB kid at heart. I hope to connect with y'all!
         </div>
         <div class="modal-footer">
-          <button type="button" class="btn btn-outline-secondary"
-            data-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-outline-secondary" data-dismiss="modal">Close</button>
         </div>
       </div>
     </div>
   </div>
 
-  <div class="modal" id="denise-bio" tabindex="-1" role="dialog"
-    aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+  <div class="modal" id="denise-bio" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
     <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
       <div class="modal-content">
         <div class="modal-header">
-          <h5 class="modal-title custom-font bold-font darkcolor" style="font-size:160%;"
-            id="exampleModalLongTitle">Denise Robles</h5>
+          <h5 class="modal-title custom-font bold-font darkcolor" style="font-size:160%;" id="exampleModalLongTitle">Denise Robles</h5>
         </div>
         <div class="modal-body darkcolor medium-font">
-          Hey everyone! My name is Denise Robles and I am a first year majoring in Bioengineering.
-          I am from Lompoc, California, but wait! Before you say that you don't know where that
-          is...
-          it is close to Santa Barbara! Hopefully that rang a bell! I am very passionate about
-          medical
-          devices and intertwining projects to help the socioeconomically underrepresented. I am a
-          part
-          of ROHP, the Bioengineering Scholars Program, and the Biomedical Engineering Society!
-          The
-          summer before my senior year I was one of the six students that represented the state of
-          California in the MIT MOSTEC Science program. In my free time I enjoy going on hikes,
-          reading
-          about the zodiac horoscopes, going exploring new places, playing soccer/tennis, and
-          hanging
-          out with my amazing friends! I am a very open-minded person and love to learn about
-          anything
-          I can! Also, a quick fun fact is that I love animals! I am a first generation student
-          and was
-          completely naïve about the college process, so if you have any questions about literally
-          anything, feel free to reach out!
+            Hey everyone! My name is Denise Robles and I am a first year majoring in Bioengineering. 
+            I am from Lompoc, California, but wait! Before you say that you don't know where that is... 
+            it is close to Santa Barbara! Hopefully that rang a bell! I am very passionate about medical 
+            devices and intertwining projects to help the socioeconomically underrepresented. I am a part 
+            of ROHP, the Bioengineering Scholars Program, and the Biomedical Engineering Society! The 
+            summer before my senior year I was one of the six students that represented the state of 
+            California in the MIT MOSTEC Science program. In my free time I enjoy going on hikes, reading 
+            about the zodiac horoscopes, going exploring new places, playing soccer/tennis, and hanging 
+            out with my amazing friends! I am a very open-minded person and love to learn about anything 
+            I can! Also, a quick fun fact is that I love animals! I am a first generation student and was 
+            completely naïve about the college process, so if you have any questions about literally 
+            anything, feel free to reach out! 
         </div>
         <div class="modal-footer">
-          <button type="button" class="btn btn-outline-secondary"
-            data-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-outline-secondary" data-dismiss="modal">Close</button>
         </div>
       </div>
     </div>
   </div>
 
-  <div class="modal" id="shukri-bio" tabindex="-1" role="dialog"
-    aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+  <div class="modal" id="shukri-bio" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
     <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
       <div class="modal-content">
         <div class="modal-header">
-          <h5 class="modal-title custom-font bold-font darkcolor" style="font-size:160%;"
-            id="exampleModalLongTitle">Shukri Suhir</h5>
+          <h5 class="modal-title custom-font bold-font darkcolor" style="font-size:160%;" id="exampleModalLongTitle">Shukri Suhir</h5>
         </div>
         <div class="modal-body darkcolor medium-font">
-          Hello! I am a first year student planning on studying Public Health and MCB Immunology
-          from
-          Sacramento, CA. In addition to ROHP, I am involved in Berkeley's United Public Health
-          Coalition, and the Phalanx pre med club. Outside of academics, I love running,
-          Taekwondo,
-          binge watching Netflix, and baking. I'm a huge Ariana Grande and K-Pop stan, but also
-          love
-          classical music, and played cello in orchestra. My ROHP experience was one of the main
-          reasons I chose Cal, and I hope I can contribute to making more awesome ROHP experiences
-          for
-          incoming students as a member of this committee.
+            Hello! I am a first year student planning on studying Public Health and MCB Immunology from
+            Sacramento, CA. In addition to ROHP, I am involved in Berkeley's United Public Health
+            Coalition, and the Phalanx pre med club. Outside of academics, I love running, Taekwondo,
+            binge watching Netflix, and baking. I'm a huge Ariana Grande and K-Pop stan, but also love
+            classical music, and played cello in orchestra. My ROHP experience was one of the main
+            reasons I chose Cal, and I hope I can contribute to making more awesome ROHP experiences for
+            incoming students as a member of this committee.
         </div>
         <div class="modal-footer">
-          <button type="button" class="btn btn-outline-secondary"
-            data-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-outline-secondary" data-dismiss="modal">Close</button>
         </div>
       </div>
     </div>
   </div>
-  </div>
+</div>
 
 
-  <!-- jquery -->
-  <script src="js/jquery-2.1.4.min.js"></script>
+    <!-- jquery -->
+    <script src="js/jquery-2.1.4.min.js"></script>
 
-  <!-- Bootstrap -->
-  <script src="js/bootstrap.min.js"></script>
+    <!-- Bootstrap -->
+    <script src="js/bootstrap.min.js"></script>
 
-  <!-- Plugin JavaScript -->
-  <script src="js/jquery.easing.min.js"></script>
+    <!-- Plugin JavaScript -->
+    <script src="js/jquery.easing.min.js"></script>
 
-  <!-- Google Maps API Key - Use your own API key to enable the map feature. More information on the Google Maps API can be found at https://developers.google.com/maps/ -->
-  <script src="https://maps.googleapis.com/maps/api/js"></script>
+    <!-- Google Maps API Key - Use your own API key to enable the map feature. More information on the Google Maps API can be found at https://developers.google.com/maps/ -->
+    <script src="https://maps.googleapis.com/maps/api/js"></script>
 
-  <!--<script src="js/one-page-nav.js"></script>-->
-  <script src="js/scripts.js"></script>
-  <script src="js/accordion.js"></script>
-  <script src="js/agenda.js"></script>
+    <!--<script src="js/one-page-nav.js"></script>-->
+    <script src="js/scripts.js"></script>
+    <script src="js/accordion.js"></script>
+    <script src="js/agenda.js"></script>
 
-  <footer class="footer">
-    <div class="copytext text-center darkcolor" style="padding-top: 30px; padding-bottom: 30px">
+    <footer class="footer">
       <div class="copyright-section">
-        <div class="container">
-          <div class="col-md-12">
-            <div class="copytext text-center darkcolor"
-              style="padding-top: 30px; padding-bottom: 30px">
-              COPYRIGHT &copy; ROHP 2020. ALL RIGHTS RESERVED.
-              <a target="_blank" href="https://www.ocf.berkeley.edu"><img
-                  src="https://www.ocf.berkeley.edu/hosting-logos/ocfbadge_mini8darkglow.png"
-                  alt="Hosted by the OCF" style="border: 0;" id="ocf" /></a>
-            </div>
+          <div class="container">
+              <div class="col-md-12">
+                  <div class="copytext text-center darkcolor" style="padding-top: 30px; padding-bottom: 30px">
+                      COPYRIGHT &copy; ROHP 2020. ALL RIGHTS RESERVED.
+                      <a target="_blank" href="https://www.ocf.berkeley.edu"><img
+                              src="https://www.ocf.berkeley.edu/hosting-logos/ocfbadge_mini8darkglow.png"
+                              alt="Hosted by the OCF" style="border: 0;" id="ocf" /></a>
+                  </div>
+              </div>
           </div>
-        </div>
-        <!-- .container -->
+          <!-- .container -->
       </div>
+      <!-- .copyright-section -->
   </footer>
 
-</body>
+  </body>
 
 </html>
