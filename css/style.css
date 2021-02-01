@@ -3454,6 +3454,10 @@ fieldset:disabled .btn {
     font-weight: 300 !important;
 }
 
+.big-font {
+    font-size: 22px !important;
+}
+
 .bold-font {
     font-weight: 400;
 }
