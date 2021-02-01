@@ -3455,7 +3455,15 @@ fieldset:disabled .btn {
 }
 
 .big-font {
-    font-size: 22px !important;
+    font-size: 20px !important;
+    font-weight: 380 !important;
+}
+
+.pronouns-font {
+    font-size: 20px !important;
+    font-weight: 300 !important;
+    font-style: italic;
+    margin-top: 0px !important;
 }
 
 .bold-font {
