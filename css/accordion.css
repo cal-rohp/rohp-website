@@ -14,16 +14,18 @@
 
 /*----- Section Titles -----*/
 .accordion-section-title {
-    width:100%;
+    width:80%;
     padding:15px;
     display:inline-block;
-    border-bottom:1px solid #888888;
+    border-bottom:1px solid #003262;
     background:#ffffff;
     transition:all linear 0.2s;
     /* Type */
-    font-size:1.200em;
+    font-size:1.20em;
+    font-weight: 390;
+    font-style: bold;
     /*text-shadow:0px 1px 0px #1a1a1a;*/
-    color:#888888;
+    color: #003262;
 }
 
 .accordion-section-title.active, .accordion-section-title:hover {
@@ -36,12 +38,12 @@
 }
 
 .accordion-section:last-child .accordion-section-title {
-    border-bottom:none;
+    border-bottom: none;
 }
 
 /*----- Section Content -----*/
 .accordion-section-content {
-    padding:15px;
+    padding:30px;
     background:#ffffff;
     font-size:1em;
     display: none;
