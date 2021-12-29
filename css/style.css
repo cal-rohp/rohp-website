@@ -1217,7 +1217,7 @@ button:focus,
     flex: 1 0 0%
 }
 
-.row-cols-auto>* {
+.--auto>* {
     flex: 0 0 auto;
     width: auto
 }
