@@ -947,6 +947,14 @@ button:focus,
 
 /* new card styles */
 
+.mx-auto-vivian {
+    margin-right: auto !important;
+    }
+
+.mx-auto-maddi {
+    margin-left: auto !important;
+    }   
+
 .card {
     position: relative;
     display: flex;
