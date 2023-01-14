@@ -236,7 +236,6 @@ button:focus,
     position : absolute;
     left     : 15px;
     right    : 15px;
-    top      : 40px;
     z-index  : 9;
     }
 
