@@ -1208,7 +1208,7 @@ button:focus,
     flex-wrap: wrap;
     margin-top: calc(var(--bs-gutter-y) * -1);
     margin-right: calc(var(--bs-gutter-x)/ -2);
-    margin-left: calc(var(--bs-gutter-x)/ -2) 
+    margin-left: calc(var(--bs-gutter-x)/ -2); 
 }
 
 .row>* {
@@ -4073,7 +4073,7 @@ fieldset:disabled .btn {
   .carousel-caption {
     font-size: 18px;
     padding:15px 20px 15px;
-    }
+    } 
   }
   @media screen and (min-width: 992px) {
    .carousel-caption {
@@ -4090,6 +4090,11 @@ fieldset:disabled .btn {
     margin-left: 10px;
     width: 100%;
     font-size: 24px;
+}
+
+.bears {
+    display: flex;
+    justify-content: center;
 }
   
 .dropdown-toggle {
